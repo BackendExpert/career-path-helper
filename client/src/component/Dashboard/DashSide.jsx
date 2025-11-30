@@ -116,12 +116,12 @@ const DashSide = ({ closeSidebar }) => {
             initial={{ width: 300, opacity: 0 }}
             animate={{ width: collapsed ? 96 : 280, opacity: 1 }}
             transition={{ duration: 0.4, ease: "easeInOut" }}
-            className="relative h-screen flex flex-col bg-gradient-to-b from-white to-emerald-50 overflow-hidden"
+            className="relative h-screen flex flex-col bg-gradient-to-b from-white to-white overflow-hidden"
         >
             <div className="flex-1 overflow-y-auto custom-scrollbar">
 
                 {/* Logo */}
-                <div className="flex items-center pb-4 pt-5 sticky top-0 bg-gradient-to-b from-white to-emerald-50 z-10">
+                <div className="flex items-center pb-4 pt-5 sticky top-0 bg-gradient-to-b from-white to-white z-10">
                     <motion.img
                         src={uoplogo}
                         alt="Logo"
