@@ -35,12 +35,14 @@ const Login = () => {
                 const decoded = jwtDecode(res.data.token);
                 const role = decoded?.role;
 
-                if (role === "admin" || role === "supervisor") {
+                if (role === "admin") {
                     setTimeout(() => navigate('/Dashboard'), 1500);
-                } else if (role === "intern") {
+                } else if (role === "intern" || role === "undergraduate") {
                     setTimeout(() => navigate('/my-account'), 1500);
-                } else if (role === "developer") {
+                } else if (role === "ase" || role === "se") {
                     setTimeout(() => navigate('/developer-dashboard'), 1500);
+                } else if (role === "sse"){
+                    setTimeout(() => navigate('/se-dashboard'), 1500);
                 } else {
                     setTimeout(() => navigate('/'), 1500);
                 }
