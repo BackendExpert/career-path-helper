@@ -12,14 +12,7 @@ const DashHome = () => {
     return (
         <div className="p-6 bg-gray-50 min-h-screen">
             {/* Header */}
-            <div className="flex flex-col md:flex-row md:items-center md:justify-between">
-                <div>
-                    <h1 className="text-2xl font-bold text-gray-800 capitalize">{auth.role} Dashboard</h1>
-                    <p className="text-sm text-gray-500 mt-1">
-                        / Dashboard / Attendance Management
-                    </p>
-                </div>
-            </div>
+
 
             {/* Welcome Section */}
             <motion.div
