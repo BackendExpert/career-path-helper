@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import SiteImage from '../../assets/siteimg.jpg';
 import DefaultInput from '../../component/Form/DefaultInput';
 import DefaultButton from '../../component/Buttons/DefaultButton';
 import Toast from '../../component/Toast/Toast';
@@ -70,71 +69,79 @@ const UpdatePassword = () => {
     };
 
     return (
-        <div className="min-h-screen flex flex-col md:flex-row">
-            <div className="relative hidden md:flex md:w-1/2">
-                <img src={SiteImage} alt="ICT Center" className="object-cover w-full h-full" />
-                <div className="absolute inset-0 bg-black/70"></div>
+        <div className="min-h-screen flex items-center justify-center px-4">
 
-                <div className="absolute bottom-10 left-10 text-white">
-                    <img src={sitelogo} alt="" className='h-16 w-auto' />
-                    <h2 className="text-3xl font-bold">BlackAlphaLabs PVT LTD</h2>
-                    <p className="text-gray-200 max-w-sm">
-                        Empowering innovation, technology, and learning excellence.
-                    </p>
-                </div>
-            </div>
-
-            <div className="flex flex-col justify-center items-center w-full md:w-1/2 px-8 py-16 bg-white">
+            {/* Toast */}
+            {toast && (
                 <div className="absolute top-5 right-5 z-50">
-                    {toast && (
-                        <Toast
-                            success={toast.success}
-                            message={toast.message}
-                            onClose={() => setToast(null)}
-                        />
-                    )}
+                    <Toast
+                        success={toast.success}
+                        message={toast.message}
+                        onClose={() => setToast(null)}
+                    />
+                </div>
+            )}
+
+            {/* Center Card */}
+            <div className="w-full max-w-md p-10 bg-white rounded-3xl shadow-lg border border-gray-100">
+
+                <div className="text-center mb-2">
+                    <img
+                        src={sitelogo}
+                        alt="logo"
+                        className="h-20 rounded-lg w-auto mx-auto mb-3
+                        bg-gradient-to-r from-emerald-400 to-cyan-400 p-4"
+                    />
                 </div>
 
-                <div className="w-full max-w-md">
-                    <div className="md:hidden">
-                        <center className='mb-4'>
-                            <img src={sitelogo} alt="" className='h-16 w-auto' />
-                            <h2 className="font-bold">BlackAlphaLabs</h2>
-                        </center>
-                    </div>
+                <h1 className="text-3xl font-bold text-gray-800 text-center mb-2">
+                    Update Password
+                </h1>
 
-                    <h1 className="text-4xl font-bold text-gray-800 text-center mb-2">
-                        Update Password
-                    </h1>
-                    <p className="text-gray-500 text-center mb-8">
-                        Update your password with a new one
-                    </p>
+                <p className="text-gray-500 text-center mb-8">
+                    Enter your new password
+                </p>
 
-                    <form onSubmit={headleSubmit}>
-                        <DefaultInput
-                            label="New Password"
-                            type="password"
-                            name="newpass"
-                            value={values.newpass}
-                            onChange={handleChange}
-                            placeholder="Enter your new password"
-                            required
-                        />
-                        <DefaultInput
-                            label="Confirm New Password"
-                            type="password"
-                            name="newpassword"
-                            value={values.newpassword}
-                            onChange={handleChange}
-                            placeholder="Confirm your new password"
-                            required
-                        />
-                        <DefaultButton
-                            type="submit"
-                            disabled={Loading}
-                            label={Loading ? "Updating..." : "Update Password"}
-                        />
-                    </form>
+                <form onSubmit={headleSubmit}>
+                    <DefaultInput
+                        label="New Password"
+                        type="password"
+                        name="newpass"
+                        value={values.newpass}
+                        onChange={handleChange}
+                        placeholder="Enter your new password"
+                        required
+                    />
+
+                    <DefaultInput
+                        label="Confirm New Password"
+                        type="password"
+                        name="newpassword"
+                        value={values.newpassword}
+                        onChange={handleChange}
+                        placeholder="Confirm your new password"
+                        required
+                    />
+
+                    <DefaultButton
+                        type="submit"
+                        disabled={Loading}
+                        label={Loading ? "Updating..." : "Update Password"}
+                    />
+                </form>
+
+                <p className="text-center text-sm text-gray-600 mt-8">
+                    Remembered your password?{' '}
+                    <a
+                        href="/"
+                        className="text-emerald-400 font-semibold hover:underline"
+                    >
+                        Sign In
+                    </a>
+                </p>
+
+                <div className="mt-2 text-center text-xs text-gray-500">
+                    &copy; CareerAI Helper | {new Date().getFullYear()}
                 </div>
             </div>
         </div>

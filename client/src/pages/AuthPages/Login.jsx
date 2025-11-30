@@ -69,7 +69,7 @@ const Login = () => {
                 </div>
             )}
 
-            <div className="w-full max-w-md p-10 bg-white rounded-3xl shadow-xl border border-gray-200">
+            <div className="w-full max-w-md p-10 bg-white rounded-3xl shadow-lg border border-gray-100">
                 <div className="text-center mb-2">
                     <img src={sitelogo} alt="logo" className="h-20 rounded-lg w-auto mx-auto mb-3 bg-gradient-to-r from-emerald-400 to-cyan-400 p-4 " />
                 </div>
@@ -121,7 +121,7 @@ const Login = () => {
                         Create one
                     </a>
                 </p>
-                <div className="">asd</div>
+                <div className="mt-2 text-center text-xs text-gray-500">&copy; CareerAI Helper | { new Date().getFullYear() }</div>
             </div>
 
         </div>
