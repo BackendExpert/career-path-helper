@@ -75,7 +75,7 @@ const Dashboard = () => {
                     <div className="flex flex-col md:flex-row md:items-center md:justify-between mt-4 ml-8">
                         <div>
                             <h1 className="text-2xl font-bold text-gray-800 capitalize">{auth.role} Dashboard</h1>
-                            <p className="text-sm text-gray-500 mt-1">
+                            <p className="text-sm text-gray-500 mt-1 capitalize">
                                 { location.pathname}
                             </p>
                         </div>
