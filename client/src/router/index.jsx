@@ -15,8 +15,7 @@ function App() {
             <Routes>
                 <Route path='/' element={<WebSite />} >
                     <Route path='*' element={<DefultError />} />
-                    <Route index element={<HomePage />} />
-                    <Route path='login' element={<Login /> } />
+                    <Route index element={<Login />} />
                     <Route path='create-account' element={<CreateAccount />} />
                     <Route path='forget-password' element={<ForgetPassword />} />
                     <Route path='verify-account' element={<VerifyEmail />} />

@@ -116,13 +116,6 @@ const VerifyEmail = () => {
                     />
                 </form>
 
-                <p className="text-center text-sm text-gray-600 mt-8">
-                    Didn’t receive an OTP?{' '}
-                    <a href="/forget-password" className="text-emerald-400 font-semibold hover:underline">
-                        Request again
-                    </a>
-                </p>
-
                 <div className="mt-2 text-center text-xs text-gray-500">
                     &copy; CareerAI Helper | {new Date().getFullYear()}
                 </div>
