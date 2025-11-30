@@ -5,6 +5,7 @@ import uoplogo from "../../assets/logo.png";
 import dashboardbg from "../../assets/siteimg.jpg";
 import API from "../../services/api";
 import { useAuth } from "../../context/AuthContext";
+
 import {
     BiSolidDashboard,
     BiTimeFive,
@@ -15,7 +16,7 @@ import { MdEvent, MdLogout } from "react-icons/md";
 import { FiBook } from "react-icons/fi";
 import { motion } from "framer-motion";
 import { ChevronDown, ChevronRight } from "lucide-react";
-import "./DashSide.css"; // 👈 Add this import for the scrollbar styles
+import "./DashSide.css";
 
 const DashSide = ({ closeSidebar }) => {
     const { auth, logout } = useAuth();
@@ -31,9 +32,6 @@ const DashSide = ({ closeSidebar }) => {
                 const res = await API.get(`/member/get-myprofileimage?nocache=${Date.now()}`, {
                     headers: {
                         Authorization: `Bearer ${token}`,
-                        "Cache-Control": "no-cache",
-                        Pragma: "no-cache",
-                        Expires: "0",
                     },
                 });
                 setMyProfileImage(
@@ -118,25 +116,25 @@ const DashSide = ({ closeSidebar }) => {
             initial={{ width: 300, opacity: 0 }}
             animate={{ width: collapsed ? 96 : 280, opacity: 1 }}
             transition={{ duration: 0.4, ease: "easeInOut" }}
-            className="relative h-screen flex flex-col bg-gradient-to-b from-white to-purple-50 overflow-hidden"
+            className="relative h-screen flex flex-col bg-gradient-to-b from-white to-emerald-50 overflow-hidden"
         >
-            {/* Scrollable container */}
             <div className="flex-1 overflow-y-auto custom-scrollbar">
+
                 {/* Logo */}
-                <div className="flex items-center pb-4 pt-5 sticky top-0 bg-gradient-to-b from-white to-purple-50 z-10">
+                <div className="flex items-center pb-4 pt-5 sticky top-0 bg-gradient-to-b from-white to-emerald-50 z-10">
                     <motion.img
                         src={uoplogo}
-                        alt="UOP Logo"
-                        className="h-10 w-auto ml-4"
+                        alt="Logo"
+                        className="h-10 w-auto ml-4 bg-gradient-to-r from-emerald-400 to-cyan-400 p-2 rounded-lg"
                         whileHover={{ scale: 1.1, rotate: 3 }}
                     />
                     {!collapsed && (
                         <motion.h1
                             initial={{ opacity: 0, y: 5 }}
                             animate={{ opacity: 1, y: 0 }}
-                            className="ml-2 font-bold text-lg text-purple-600"
+                            className="ml-2 font-bold text-lg text-emerald-700"
                         >
-                            BAL
+                            CareerAI
                         </motion.h1>
                     )}
                 </div>
@@ -154,8 +152,8 @@ const DashSide = ({ closeSidebar }) => {
                                     <button
                                         onClick={() => toggleSubmenu(index)}
                                         className={`group relative flex items-center justify-between w-full px-4 py-2 rounded-xl font-medium transition-all duration-300 ${openMenu === index
-                                            ? "text-purple-600 bg-purple-50 shadow-sm"
-                                            : "text-gray-600 hover:text-purple-600 hover:bg-purple-50"
+                                                ? "text-emerald-600 bg-emerald-100 shadow-sm"
+                                                : "text-gray-600 hover:text-emerald-600 hover:bg-emerald-50"
                                             }`}
                                     >
                                         <div className="flex items-center gap-3">
@@ -175,9 +173,10 @@ const DashSide = ({ closeSidebar }) => {
                                                 </motion.span>
                                             )}
                                         </div>
+
                                         {!collapsed && (
                                             openMenu === index ? (
-                                                <ChevronDown className="w-4 h-4 text-purple-500" />
+                                                <ChevronDown className="w-4 h-4 text-emerald-600" />
                                             ) : (
                                                 <ChevronRight className="w-4 h-4 text-gray-400" />
                                             )
@@ -198,8 +197,8 @@ const DashSide = ({ closeSidebar }) => {
                                                     onClick={closeSidebar}
                                                     className={({ isActive }) =>
                                                         `block px-3 py-1.5 rounded-lg text-sm transition-all duration-200 ${isActive
-                                                            ? "text-purple-600 font-semibold"
-                                                            : "text-gray-500 hover:text-purple-600"
+                                                            ? "text-emerald-700 font-semibold"
+                                                            : "text-gray-500 hover:text-emerald-600"
                                                         }`
                                                     }
                                                 >
@@ -215,8 +214,8 @@ const DashSide = ({ closeSidebar }) => {
                                     onClick={closeSidebar}
                                     className={({ isActive }) =>
                                         `group relative flex items-center gap-3 px-4 py-2 rounded-xl font-medium transition-all duration-300 ${isActive
-                                            ? "text-purple-600"
-                                            : "text-gray-600 hover:text-purple-600 hover:ml-1"
+                                            ? "text-emerald-600"
+                                            : "text-gray-600 hover:text-emerald-600 hover:ml-1"
                                         }`
                                     }
                                 >
@@ -245,16 +244,16 @@ const DashSide = ({ closeSidebar }) => {
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
                         onClick={() => logout(navigate)}
-                        className="flex items-center gap-3 w-full px-4 py-3 mt-6 text-red-400 hover:text-white hover:bg-red-500/30 rounded-xl font-medium transition-all duration-300"
+                        className="flex items-center gap-3 w-full px-4 py-3 mt-6 text-red-500 hover:text-white hover:bg-red-500/40 rounded-xl font-medium transition-all duration-300"
                     >
                         <MdLogout className="text-xl" />
                         {!collapsed && <span className="text-sm">Logout</span>}
                     </motion.button>
                 </nav>
 
-                {/* User Info & Decorative Section */}
+                {/* User Info */}
                 {!collapsed && (
-                    <div className="px-4 py-4 mt-4 border-t border-purple-100 bg-gradient-to-r from-purple-50 to-white relative overflow-hidden">
+                    <div className="px-4 py-4 mt-4 border-t border-emerald-100 bg-gradient-to-r from-emerald-50 to-white">
                         <div className="flex items-center gap-3 mb-3">
                             <img
                                 src={MyProfileImage[0]?.url || defultImg}
@@ -270,11 +269,12 @@ const DashSide = ({ closeSidebar }) => {
                                 </span>
                             </div>
                         </div>
+
                         <div className="relative rounded-xl overflow-hidden">
                             <img
                                 src={dashboardbg}
                                 alt="Dashboard Decoration"
-                                className="w-full h-20 object-cover rounded-lg opacity-70 hover:opacity-90 transition"
+                                className="w-full h-20 object-cover rounded-lg opacity-80 hover:opacity-90 transition"
                             />
                             <div className="absolute inset-0 bg-gradient-to-t from-white/60 to-transparent"></div>
                         </div>
@@ -285,14 +285,14 @@ const DashSide = ({ closeSidebar }) => {
                 <motion.div
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
-                    className="p-3 text-center text-[10px] text-purple-400 border-t border-purple-100"
+                    className="p-3 text-center text-[10px] text-emerald-500 border-t border-emerald-100"
                 >
                     {!collapsed && (
                         <>
-                            © {new Date().getFullYear()} Employee Management System
+                            © {new Date().getFullYear()} CareerAI Helper
                             <br />
-                            <span className="text-fuchsia-500 font-semibold">
-                                BlackAlphaLabs
+                            <span className="font-semibold text-emerald-600">
+                                Empowering Smart Careers
                             </span>
                         </>
                     )}
