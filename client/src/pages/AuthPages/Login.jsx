@@ -70,11 +70,8 @@ const Login = () => {
             )}
 
             <div className="w-full max-w-md p-10 bg-white rounded-3xl shadow-xl border border-gray-200">
-                <div className="text-center mb-6">
-                    <img src={sitelogo} alt="logo" className="h-16 w-auto mx-auto mb-3" />
-                    <h2 className="text-2xl font-bold text-gray-800">
-                        BlackAlphaLabs
-                    </h2>
+                <div className="text-center mb-2">
+                    <img src={sitelogo} alt="logo" className="h-20 rounded-lg w-auto mx-auto mb-3 bg-gradient-to-r from-emerald-400 to-cyan-400 p-4 " />
                 </div>
 
                 <h1 className="text-3xl font-bold text-gray-800 text-center mb-2">
