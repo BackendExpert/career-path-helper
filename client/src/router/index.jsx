@@ -28,16 +28,10 @@ function App() {
                     <Route path='verify-otp' element={<VerifyOTP />} />
                     <Route path='update-password' element={<UpdatePassword />} />
 
-                    <Route path='/Dashboard' element={<PrivateRoute roles={['admin', 'supervisor']}><Dashboard /></PrivateRoute>}>
-                        <Route path='*' element={<PrivateRoute roles={['admin', 'supervisor', 'intern']}><DashError /> </PrivateRoute>} />
-                        <Route index element={<PrivateRoute roles={['admin', 'supervisor']}><DashHome /> </PrivateRoute>} />
+                    <Route path='/Dashboard' element={<PrivateRoute roles={['admin', 'intern', 'undergraduate', 'ase', 'se']}><Dashboard /></PrivateRoute>}>
+                        <Route path='*' element={<PrivateRoute roles={['admin', 'intern', 'undergraduate', 'ase', 'se']}><DashError /> </PrivateRoute>} />
+                        <Route index element={<PrivateRoute roles={['admin', 'intern', 'undergraduate', 'ase', 'se']}><DashHome /> </PrivateRoute>} />
                     </Route>
-
-                    <Route path='/DevDashboard' element={<PrivateRoute roles={['admin', 'intern']}><DevDashboard /></PrivateRoute>}>
-                        <Route path='*' element={<PrivateRoute roles={['admin', 'supervisor', 'intern']}><DashError /> </PrivateRoute>} />
-                        <Route index element={<PrivateRoute roles={['admin', 'intern']}><DevHome /> </PrivateRoute>} />
-                    </Route>
-
 
                 </Route>
 
