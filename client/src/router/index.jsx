@@ -15,6 +15,7 @@ import DevDashboard from '../layouts/DevDashboard'
 import DevHome from '../pages/DevDashboard/DevHome'
 import HomePage from '../pages/HomePage/HomePage'
 import User from '../pages/Dashboard/Users/User'
+import Levels from '../pages/Dashboard/Users/Levels'
 
 function App() {
     return (
@@ -35,6 +36,8 @@ function App() {
                     
                         {/* admin */}
                         <Route path='admin/users' element={<PrivateRoute roles={['admin']}><User /> </PrivateRoute>} />
+                        <Route path='admin/levels' element={<PrivateRoute roles={['admin']}><Levels /> </PrivateRoute>} />
+                        
 
                     </Route>
 
