@@ -10,12 +10,7 @@ import {
 import API from "../../../services/api";
 
 const User = () => {
-    const userdata = [
-        { id: 1, name: "Total Users", value: 50, icon: FaUsers },
-        { id: 2, name: "Total Admins", value: 5, icon: FaUser },
-        { id: 3, name: "Total Interns/Undergraduate", value: 30, icon: FaUsers },
-        { id: 4, name: "Total SE/SSE", value: 15, icon: FaUsers },
-    ];
+
 
     const [allusers, setAllUsers] = useState([]);
     const [menuOpen, setMenuOpen] = useState(null);
@@ -34,16 +29,6 @@ const User = () => {
 
                 let users = Array.isArray(res.data.result) ? res.data.result : [];
 
-                if (users.length < 20) {
-                    for (let i = 1; i <= 25; i++) {
-                        users.push({
-                            email: `testuser${i}@example.com`,
-                            username: `testuser${i}`,
-                            role: { name: i % 2 === 0 ? "admin" : "user" },
-                        });
-                    }
-                }
-
                 setAllUsers(users);
             } catch (err) {
                 console.log(err);
@@ -52,6 +37,19 @@ const User = () => {
 
         if (token) fetchAllUsers();
     }, [token]);
+
+    const totalAdmins = allusers.filter(u => u.role?.name === "admin").length;
+    const totalInterns = allusers.filter(u => u.role?.name === "intern").length;
+    const totalUndergraduates = allusers.filter(u => u.role?.name === "undergraduate").length;
+    const totalSE = allusers.filter(u => u.role?.name === "se").length;
+    const totalASE = allusers.filter(u => u.role?.name === "ase").length;
+
+    const userdata = [
+        { id: 1, name: "Total Users", value: allusers.length, icon: FaUsers },
+        { id: 2, name: "Total Admins", value: totalAdmins + totalUndergraduates, icon: FaUser },
+        { id: 3, name: "Total Interns/Undergraduate", value: totalInterns, icon: FaUsers },
+        { id: 4, name: "Total SE/SSE", value: totalSE + totalASE, icon: FaUsers },
+    ];
 
     const filteredUsers = allusers.filter((u) =>
         u.email.toLowerCase().includes(search.toLowerCase()) ||
@@ -150,8 +148,8 @@ const User = () => {
                                     <td className="py-2 px-2 sm:py-4 sm:px-4">
                                         <span
                                             className={`px-3 py-1 rounded-full text-sm font-semibold shadow-sm ${user.role?.name === "admin"
-                                                    ? "bg-emerald-100 text-emerald-700"
-                                                    : "bg-cyan-100 text-cyan-700"
+                                                ? "bg-emerald-100 text-emerald-700"
+                                                : "bg-cyan-100 text-cyan-700"
                                                 }`}
                                         >
                                             {user.role?.name}
@@ -206,8 +204,8 @@ const User = () => {
                         key={i}
                         onClick={() => goToPage(i + 1)}
                         className={`px-4 py-2 rounded-lg shadow-sm transition ${currentPage === i + 1
-                                ? "bg-cyan-500 text-white shadow-md"
-                                : "bg-white hover:bg-gray-100"
+                            ? "bg-cyan-500 text-white shadow-md"
+                            : "bg-white hover:bg-gray-100"
                             }`}
                     >
                         {i + 1}
