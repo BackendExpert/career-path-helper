@@ -17,6 +17,7 @@ import HomePage from '../pages/HomePage/HomePage'
 import User from '../pages/Dashboard/Users/User'
 import Levels from '../pages/Dashboard/Users/Levels'
 import ViewRole from '../pages/Dashboard/Users/ViewRole'
+import SystemLogs from '../pages/Dashboard/SystemLogs'
 
 function App() {
     return (
@@ -39,6 +40,7 @@ function App() {
                         <Route path='admin/users' element={<PrivateRoute roles={['admin']}><User /> </PrivateRoute>} />
                         <Route path='admin/levels' element={<PrivateRoute roles={['admin']}><Levels /> </PrivateRoute>} />
                         <Route path='admin/levels/view/:id' element={<PrivateRoute roles={['admin']}><ViewRole /> </PrivateRoute>} />
+                        <Route path='admin/logs' element={<PrivateRoute roles={['admin']}><SystemLogs /> </PrivateRoute>} />
                         
 
                     </Route>
