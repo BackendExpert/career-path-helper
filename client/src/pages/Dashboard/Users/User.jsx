@@ -158,28 +158,14 @@ const User = () => {
 
                                     {/* Dropdown */}
                                     <td className="py-2 px-2 sm:py-4 sm:px-4 text-right relative">
-                                        <button
-                                            onClick={() =>
-                                                setMenuOpen(menuOpen === index ? null : index)
-                                            }
-                                            className="text-gray-500 hover:text-gray-800 text-xl"
+                                        <button      
+                                            className="text-gray-500 hover:text-gray-800 text-xl "
                                         >
-                                            •••
+                                            <button className="w-full flex items-center gap-2 px-4 py-2 hover:text-blue-500 text-sm">
+                                                <FaEdit /> Edit
+                                            </button>
                                         </button>
 
-                                        {menuOpen === index && (
-                                            <div className="absolute right-0 mt-2 w-44 bg-white shadow-xl rounded-2xl z-10">
-                                                <button className="w-full flex items-center gap-2 px-4 py-2 hover:bg-gray-100 text-sm">
-                                                    <FaEye /> View
-                                                </button>
-                                                <button className="w-full flex items-center gap-2 px-4 py-2 hover:bg-gray-100 text-sm">
-                                                    <FaEdit /> Edit
-                                                </button>
-                                                <button className="w-full flex items-center gap-2 px-4 py-2 hover:bg-red-50 text-sm text-red-600">
-                                                    <FaTrash /> Delete
-                                                </button>
-                                            </div>
-                                        )}
                                     </td>
                                 </tr>
                             ))}
