@@ -2,6 +2,9 @@ import React, { useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import API from '../../../services/api'
 import DefaultButton from '../../../component/Buttons/DefaultButton'
+import DefaultInput from '../../../component/Form/DefaultInput'
+import useForm from '../../../hooks/useForm'
+
 
 const ViewRole = () => {
     const { id } = useParams()
@@ -26,6 +29,12 @@ const ViewRole = () => {
 
         if (token) fetchRoleById()
     }, [token, id])
+
+    const { values, handleChange } = useForm({
+        perName: '',
+    });
+
+
 
     if (!onerole) return <div className="p-6 text-gray-500">Loading role data...</div>
 
@@ -58,7 +67,29 @@ const ViewRole = () => {
             </div>
 
             <div className="p-6 bg-white rounded-lg shadow-md mt-2">
-                
+                <h1 className="text-lg font-semibold text-gray-500">Create New Permissions</h1>
+
+                <div className="mt-4">
+                    <form action="" method="post">
+                        <DefaultInput
+                            label="Add New Permissions"
+                            type="text"
+                            name="perName"
+                            value={values.perName}
+                            onChange={handleChange}
+                            placeholder="Create New Permissions"
+                            required
+                        />
+
+                        <div className="w-1/2">
+                            <DefaultButton
+                                type='submit'
+                                label='Create Permissions'
+                            />
+                        </div>
+
+                    </form>
+                </div>
             </div>
         </div>
     )
