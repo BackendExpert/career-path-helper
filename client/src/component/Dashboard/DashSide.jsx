@@ -56,16 +56,6 @@ const DashSide = ({ closeSidebar }) => {
         },
 
         {
-            name: "My Profile",
-            icon: <FaUser />,
-            submenu: [
-                { name: "View Profile", link: "/dashboard/profile" },
-                { name: "Update Details", link: "/dashboard/profile/update" },
-            ],
-            roles: ["admin","undergraduate","intern","ase","se"],
-        },
-
-        {
             name: "Projects",
             icon: <FaFolderOpen />,
             submenu: [
