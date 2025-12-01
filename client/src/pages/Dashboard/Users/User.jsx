@@ -8,15 +8,18 @@ import {
     FaSearch,
 } from "react-icons/fa";
 import API from "../../../services/api";
+import Dropdown from "../../../component/Form/Dropdown";
+import { useAuth } from "../../../context/AuthContext";
 
 const User = () => {
-
-
     const [allusers, setAllUsers] = useState([]);
     const [menuOpen, setMenuOpen] = useState(null);
     const [search, setSearch] = useState("");
     const [currentPage, setCurrentPage] = useState(1);
     const ITEMS_PER_PAGE = 15;
+    const { auth } = useAuth()
+
+    const [allroles, setallroles] = useState([])
 
     const token = localStorage.getItem("token");
 
@@ -28,7 +31,6 @@ const User = () => {
                 });
 
                 let users = Array.isArray(res.data.result) ? res.data.result : [];
-
                 setAllUsers(users);
             } catch (err) {
                 console.log(err);
@@ -37,6 +39,22 @@ const User = () => {
 
         if (token) fetchAllUsers();
     }, [token]);
+
+    useEffect(() => {
+        const fetchAllRoles = async () => {
+            try {
+                const res = await API.get(`/role/get-roles?nocache=${Date.now()}`, {
+                    headers: { Authorization: `Bearer ${token}` },
+                });
+                let roles = Array.isArray(res.data.result) ? res.data.result : [];
+                setallroles(roles);
+            }
+            catch (err) {
+                console.log(err)
+            }
+        }
+        if (token) fetchAllRoles()
+    }, [token])
 
     const totalAdmins = allusers.filter(u => u.role?.name === "admin").length;
     const totalInterns = allusers.filter(u => u.role?.name === "intern").length;
@@ -80,7 +98,7 @@ const User = () => {
                             className="bg-white rounded-3xl p-6 shadow-lg hover:shadow-2xl transition-transform hover:-translate-y-1"
                         >
                             <div className="flex items-center gap-5">
-                                <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-cyan-500 to-emerald-500 flex items-center justify-center shadow-md transform transition group-hover:scale-110">
+                                <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-cyan-500 to-emerald-500 flex items-center justify-center shadow-md">
                                     <Icon className="text-white text-2xl" />
                                 </div>
                                 <div>
@@ -129,53 +147,82 @@ const User = () => {
 
                         <tbody>
                             {paginatedUsers.map((user, index) => (
-                                <tr
-                                    key={index}
-                                    className="hover:bg-gray-50 transition rounded-xl sm:table-row flex flex-col sm:flex-row mb-4 sm:mb-0 p-4 sm:p-0"
-                                >
-                                    <td className="py-2 px-2 sm:py-4 sm:px-4">
-                                        {(currentPage - 1) * ITEMS_PER_PAGE + index + 1}
-                                    </td>
+                                <React.Fragment key={index}>
+                                    <tr
+                                        className="hover:bg-gray-50 transition rounded-xl sm:table-row flex flex-col sm:flex-row mb-4 sm:mb-0 p-4 sm:p-0"
+                                    >
+                                        <td className="py-2 px-2 sm:py-4 sm:px-4">
+                                            {(currentPage - 1) * ITEMS_PER_PAGE + index + 1}
+                                        </td>
 
-                                    <td className="py-2 px-2 sm:py-4 sm:px-4 font-medium break-all">
-                                        {user.email}
-                                    </td>
+                                        <td className="py-2 px-2 sm:py-4 sm:px-4 font-medium break-all">
+                                            {user.email}
+                                        </td>
 
-                                    <td className="py-2 px-2 sm:py-4 sm:px-4">
-                                        {user.username}
-                                    </td>
+                                        <td className="py-2 px-2 sm:py-4 sm:px-4">
+                                            {user.username}
+                                        </td>
 
-                                    <td className="py-2 px-2 sm:py-4 sm:px-4">
-                                        <span
-                                            className={`px-3 py-1 rounded-full text-sm font-semibold shadow-sm ${user.role?.name === "admin"
-                                                ? "bg-emerald-100 text-emerald-700"
-                                                : "bg-cyan-100 text-cyan-700"
-                                                }`}
-                                        >
-                                            {user.role?.name}
-                                        </span>
-                                    </td>
+                                        <td className="py-2 px-2 sm:py-4 sm:px-4">
+                                            <span
+                                                className={`px-3 py-1 rounded-full text-sm font-semibold shadow-sm ${user.role?.name === "admin"
+                                                    ? "bg-emerald-100 text-emerald-700"
+                                                    : "bg-cyan-100 text-cyan-700"
+                                                    }`}
+                                            >
+                                                {user.role?.name}
+                                            </span>
+                                        </td>
 
-                                    {/* Dropdown */}
-                                    <td className="py-2 px-2 sm:py-4 sm:px-4 text-right relative">
-                                        <button      
-                                            className="text-gray-500 hover:text-gray-800 text-xl "
-                                        >
-                                            <button className="w-full flex items-center gap-2 px-4 py-2 hover:text-blue-500 text-sm">
-                                                <FaEdit /> Edit
-                                            </button>
-                                        </button>
+                                        <td className="py-2 px-2 sm:py-4 sm:px-4 text-right">
+                                            {
+                                                auth?.user?.email === user?.email ?
+                                                    <div className="text-gray-500 text-sm">
+                                                        cannot update current user
+                                                    </div>
+                                                    :
+                                                    <div className="">
+                                                        <button
+                                                            onClick={() =>
+                                                                setMenuOpen(menuOpen === index ? null : index)
+                                                            }
+                                                            className="text-gray-500 hover:text-gray-800 text-xl"
+                                                        >
+                                                            <FaEdit />
+                                                        </button>
+                                                    </div>
+                                            }
 
-                                    </td>
-                                </tr>
+                                        </td>
+                                    </tr>
+
+
+                                    {menuOpen === index && (
+                                        <tr>
+                                            <td colSpan={5}>
+                                                <div className="mt-3 p-4 bg-white rounded-xl shadow-md">
+                                                    <p className="font-semibold mb-2">Edit User Role</p>
+                                                    <Dropdown
+                                                        label="Select Role"
+                                                        name="role"
+                                                        required={true}
+                                                        onChange={(e) => console.log("Selected role:", e.target.value)}
+                                                        options={allroles.map((role) => ({
+                                                            value: role._id,
+                                                            label: role.name,
+                                                        }))}
+                                                    />
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    )}
+                                </React.Fragment>
                             ))}
                         </tbody>
                     </table>
-
                 </div>
             </div>
 
-            {/* ----------------------- Pagination ----------------------- */}
             <div className="flex justify-center items-center gap-2 mt-6">
                 <button
                     className="px-4 py-2 rounded-lg shadow-sm bg-white hover:bg-gray-100"
