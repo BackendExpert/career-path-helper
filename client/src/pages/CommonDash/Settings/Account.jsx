@@ -3,6 +3,7 @@ import { FaUser } from "react-icons/fa";
 import PersonalInfo from "./PersonalInfo";
 import profileImg from "../../../assets/user.png"
 import { useAuth } from "../../../context/AuthContext";
+import Social from "./Social";
 
 const Account = () => {
     const [active, setActive] = useState(1);
@@ -19,7 +20,7 @@ const Account = () => {
             id: 2,
             name: "Accounts Information",
             icon: FaUser,
-            content: <PersonalInfo />
+            content: <Social />
         },
         {
             id: 3,
