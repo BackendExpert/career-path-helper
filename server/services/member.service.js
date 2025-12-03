@@ -2,6 +2,7 @@ const User = require("../models/user.model")
 const Member = require("../models/member.model");
 
 const logUserAction = require("../utils/others/logUserAction");
+
 const {
     CreateMemberPersonalDataResDTO
 } = require("../dtos/member.dto");
@@ -48,7 +49,7 @@ class MemberService {
             };
             await logUserAction(req, "Update Persanl Information", `${decoded.email} Create Personal Information`, metadata, user._id);
         }
-        
+
         return CreateMemberPersonalDataResDTO()
 
     }
