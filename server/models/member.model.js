@@ -11,6 +11,11 @@ const MemberSchema = new mongoose.Schema({
     lname: { type: String },
     mobile: { type: String },
 
+    gender: { type: String },
+    currentjob: { type: String },
+    shortbio: { type: String },  
+    profileimage: { type: String },
+
     github: { type: String, default: "" },
     linkedin: { type: String, default: "" },
     twitter: { type: String, default: "" },
