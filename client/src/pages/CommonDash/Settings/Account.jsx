@@ -1,9 +1,15 @@
 import React, { useState } from "react";
-import { FaUser } from "react-icons/fa";
+import { FaGraduationCap, FaUserCog, FaUserLock, FaBriefcase } from "react-icons/fa";
 import PersonalInfo from "./PersonalInfo";
 import profileImg from "../../../assets/user.png"
 import { useAuth } from "../../../context/AuthContext";
 import Social from "./Social";
+import APIConnected from "./APIConnected";
+import { FaLink } from "react-icons/fa6";
+import { IoShareSocial } from "react-icons/io5";
+import UpdatePassword from "./UpdatePassword";
+import Education from "./Education";
+import Experience from "./Experience";
 
 const Account = () => {
     const [active, setActive] = useState(1);
@@ -13,20 +19,38 @@ const Account = () => {
         {
             id: 1,
             name: "Personal Information",
-            icon: FaUser,
+            icon: FaUserCog,
             content: <PersonalInfo />
         },
         {
             id: 2,
             name: "Accounts Information",
-            icon: FaUser,
+            icon: IoShareSocial,
             content: <Social />
         },
         {
             id: 3,
+            name: "Education",
+            icon: FaGraduationCap,
+            content: <Education />
+        },
+        {
+            id: 4,
+            name: "Experience",
+            icon: FaBriefcase,
+            content: <Experience />
+        },
+        {
+            id: 5,
             name: "API Connected",
-            icon: FaUser,
-            content: <PersonalInfo />
+            icon: FaLink,
+            content: <APIConnected />
+        },
+        {
+            id: 6,
+            name: "Password Update",
+            icon: FaUserLock,
+            content: <UpdatePassword />
         },
     ];
 
@@ -58,12 +82,12 @@ const Account = () => {
                     </div>
 
 
-                    <div className="border-t border-gray-200">
+                    <div className="border-t border-gray-200 pb-12">
                         <center>
                             <img src={profileImg} alt="" className="h-40 w-auto" />
                             <div className="uppercase font-semibold">{auth.user.username}</div>
                             <div className="text-gray-500">{auth.user.email}</div>
-                            
+
                         </center>
 
                     </div>
