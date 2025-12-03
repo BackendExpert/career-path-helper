@@ -101,6 +101,26 @@ class MemberService {
 
         return CreateMemberSocialResDTO();
     }
+
+    static async CreateEducation(token, school, course, startat, endat, req) {
+        let decoded;
+
+        try {
+            decoded = jwt.verify(token, process.env.JWT_SECRET);
+        } catch (err) {
+            if (err.name === "TokenExpiredError") throw new Error("Token expired");
+            throw new Error("Invalid token");
+        }
+
+        const user = await User.findOne({ email: decoded.email });
+        if (!user) throw new Error("User not found");
+
+        const member = await Member.findOne({ user: user._id });
+        if (!member) throw new Error("Create personal data first");
+
+        
+
+    }
 }
 
 module.exports = MemberService;
