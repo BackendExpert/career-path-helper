@@ -23,8 +23,6 @@ const MemberController = {
 
             const profileimage = req.file ? req.file.filename : null;
 
-            console.log("Uploaded file:", req.file);
-
             const dto = CreateMemberPersonalDataDTO(
                 token,
                 fname,
