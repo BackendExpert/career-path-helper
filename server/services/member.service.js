@@ -4,7 +4,8 @@ const Member = require("../models/member.model");
 const logUserAction = require("../utils/others/logUserAction");
 
 const {
-    CreateMemberPersonalDataResDTO
+    CreateMemberPersonalDataResDTO,
+    CreateMemberSocialResDTO
 } = require("../dtos/member.dto");
 
 
@@ -53,6 +54,62 @@ class MemberService {
         return CreateMemberPersonalDataResDTO()
 
     }
+
+    static async CreateSocialAccounts(token, github, linkedin, twitter, fb, website, req) {
+        let decoded;
+
+        try {
+            decoded = jwt.verify(token, process.env.JWT_SECRET);
+        } catch (err) {
+            if (err.name === "TokenExpiredError") {
+                throw new Error("Token expired. Please request a new one.");
+            }
+            throw new Error("Invalid token.");
+        }
+
+        const user = await User.findOne({ email: decoded.email });
+        if (!user) throw new Error("User not found");
+
+        const member = await Member.findOne({ user: user._id });
+
+        if (!member) {
+            throw new Error("First create personal information before adding social accounts.");
+        }
+
+        const updatedFields = {};
+        if (github !== undefined) updatedFields.github = github;
+        if (linkedin !== undefined) updatedFields.linkedin = linkedin;
+        if (twitter !== undefined) updatedFields.twitter = twitter;
+        if (fb !== undefined) updatedFields.fb = fb;
+        if (website !== undefined) updatedFields.website = website;
+
+        const updatedMember = await Member.findOneAndUpdate(
+            { user: user._id },
+            { $set: updatedFields },
+            { new: true }
+        );
+
+        if (updatedMember) {
+            if (req) {
+                const metadata = {
+                    ipAddress: req.headers["x-forwarded-for"] || req.socket.remoteAddress,
+                    userAgent: req.headers["user-agent"],
+                    timestamp: new Date(),
+                };
+
+                await logUserAction(
+                    req,
+                    "Update Social Accounts",
+                    `${decoded.email} updated social accounts`,
+                    metadata,
+                    user._id
+                );
+            }
+
+            return CreateMemberSocialResDTO();
+        }
+    }
+
 }
 
 module.exports = MemberService

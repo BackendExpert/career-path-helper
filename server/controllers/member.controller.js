@@ -1,5 +1,5 @@
 const {
-    ErrorResDTO, 
+    ErrorResDTO,
     CreateMemberPersonalDataDTO
 } = require("../dtos/member.dto");
 
@@ -26,6 +26,40 @@ const MemberController = {
                 memberpersonldatadto.token,
                 memberpersonldatadto.fname,
                 memberpersonldatadto.lname,
+                req
+            )
+
+            res.status(200).json(result)
+        }
+        catch (err) {
+            return res.status(400).json(ErrorResDTO(err.message));
+        }
+    },
+
+    createSocialAccounts: async (req, res) => {
+        try {
+            const token = req.header("Authorization")?.replace("Bearer ", "");
+            if (!token) {
+                return res.status(401).json({ message: "Access denied. No token provided." });
+            }
+
+            const {
+                github,
+                linkedin,
+                twitter,
+                fb,
+                website
+            } = req.body
+
+            const createsocialaccouts = CreateMemberSocialResDTO(token, github, linkedin, twitter, fb, website)
+
+            const result = await MemberService.CreateSocialAccounts(
+                createsocialaccouts.token,
+                createsocialaccouts.github,
+                createsocialaccouts.linkedin,
+                createsocialaccouts.twitter,
+                createsocialaccouts.fb,
+                createsocialaccouts.website,
                 req
             )
 

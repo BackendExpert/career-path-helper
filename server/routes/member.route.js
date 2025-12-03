@@ -6,4 +6,6 @@ const router = express.Router();
 
 router.post('/create-member-personaldata', auth, MemberController.createMemberPersonalData)
 
+router.post('/create-social-accounts', auth, MemberController.createSocialAccounts)
+
 module.exports = router;
