@@ -3,7 +3,8 @@ const {
     CreateMemberPersonalDataDTO,
     CreateMemberSocialDTO,
     CreateMemberEducationDTO,
-    CreateMemberExpDTO
+    CreateMemberExpDTO,
+    CreateMemberAIAPIDTO
 } = require("../dtos/member.dto");
 
 const MemberService = require("../services/member.service");
@@ -134,6 +135,29 @@ const MemberController = {
                 dto.job,
                 dto.startat,
                 dto.endat,
+                req
+            )
+            res.status(200).json(result);
+        }
+        catch (err) {
+            return res.status(400).json(ErrorResDTO(err.message));
+        }
+    },
+
+    createAIAPI: async (req, res) => {
+        try {
+            const token = req.header("Authorization")?.replace("Bearer ", "");
+            if (!token) return res.status(401).json({ message: "Access denied" });
+
+            const {
+                aiapi
+            } = req.body;
+
+            const dto = CreateMemberAIAPIDTO(token, aiapi);
+
+            const result = await MemberService.CreateAIAPI(
+                dto.token,
+                dto.aiapi,
                 req
             )
             res.status(200).json(result);

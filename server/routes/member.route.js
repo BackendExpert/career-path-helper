@@ -13,4 +13,6 @@ router.post('/create-education', auth, MemberController.createEducation)
 
 router.post('/create-exp', auth, MemberController.createExp)
 
+router.post('/create-aiapi', auth, MemberController.createAIAPI)
+
 module.exports = router;

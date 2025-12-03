@@ -7,7 +7,8 @@ const {
     CreateMemberPersonalDataResDTO,
     CreateMemberSocialResDTO,
     CreateMemberEducationResDTO,
-    CreateMemberExpResDTO
+    CreateMemberExpResDTO,
+    CreateMemberAIAPIResDTO
 } = require("../dtos/member.dto");
 
 class MemberService {
@@ -181,6 +182,47 @@ class MemberService {
             }
 
             return CreateMemberExpResDTO()
+        }
+    }
+
+    static async CreateAIAPI(token, aiapi, req) {
+        let decoded;
+
+        try {
+            decoded = jwt.verify(token, process.env.JWT_SECRET);
+        } catch (err) {
+            if (err.name === "TokenExpiredError") throw new Error("Token expired");
+            throw new Error("Invalid token");
+        }
+
+        const user = await User.findOne({ email: decoded.email });
+        if (!user) throw new Error("User not found");
+
+        const member = await Member.findOne({ user: user._id });
+        if (!member) throw new Error("Create personal data first");
+
+
+        const updatedFields = {};
+        if (aiapi) updatedFields.aiapi = aiapi;
+
+
+        const updatemember = await Member.findOneAndUpdate(
+            { user: user._id },
+            { $set: updatedFields },
+            { new: true, runValidators: true }
+        );
+
+        if (updatemember) {
+            if (req) {
+                const metadata = {
+                    ipAddress: req.headers["x-forwarded-for"] || req.socket.remoteAddress,
+                    userAgent: req.headers["user-agent"],
+                    timestamp: new Date(),
+                };
+                await logUserAction(req, "Update AI API", `${decoded.email} Update AI API`, metadata, user._id);
+            }
+
+            return CreateMemberAIAPIResDTO()
         }
     }
 }
