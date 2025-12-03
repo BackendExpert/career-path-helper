@@ -1,7 +1,9 @@
 const {
     ErrorResDTO,
     CreateMemberPersonalDataDTO,
-    CreateMemberSocialDTO
+    CreateMemberSocialDTO,
+    CreateMemberEducationDTO,
+    CreateMemberExpDTO
 } = require("../dtos/member.dto");
 
 const MemberService = require("../services/member.service");
@@ -81,7 +83,67 @@ const MemberController = {
         } catch (err) {
             return res.status(400).json(ErrorResDTO(err.message));
         }
+    },
+
+    createEducation: async (req, res) => {
+        try {
+            const token = req.header("Authorization")?.replace("Bearer ", "");
+            if (!token) return res.status(401).json({ message: "Access denied" });
+
+            const {
+                school,
+                course,
+                startat,
+                endat
+            } = req.body;
+
+            const dto = CreateMemberEducationDTO(token, school, course, startat, endat);
+
+            const result = await MemberService.CreateEducation(
+                dto.token,
+                dto.school,
+                dto.course,
+                dto.startat,
+                dto.endat,
+                req
+            )
+            res.status(200).json(result);
+        }
+        catch (err) {
+            return res.status(400).json(ErrorResDTO(err.message));
+        }
+    },
+
+    createExp: async (req, res) => {
+        try {
+            const token = req.header("Authorization")?.replace("Bearer ", "");
+            if (!token) return res.status(401).json({ message: "Access denied" });
+
+            const {
+                workplace,
+                job,
+                startat,
+                endat
+            } = req.body;
+
+            const dto = CreateMemberExpDTO(token, workplace, job, startat, endat);
+
+            const result = await MemberService.CreateExp(
+                dto.token,
+                dto.workplace,
+                dto.job,
+                dto.startat,
+                dto.endat,
+                req
+            )
+            res.status(200).json(result);
+        }
+        catch (err) {
+            return res.status(400).json(ErrorResDTO(err.message));
+        }
     }
+
+
 };
 
 module.exports = MemberController;

@@ -9,4 +9,8 @@ router.post('/create-member-personaldata', auth, upload.single('profileimage'), 
 
 router.post('/create-social-accounts', auth, MemberController.createSocialAccounts)
 
+router.post('/create-education', auth, MemberController.createEducation)
+
+router.post('/create-exp', auth, MemberController.createExp)
+
 module.exports = router;

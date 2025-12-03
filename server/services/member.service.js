@@ -5,7 +5,9 @@ const logUserAction = require("../utils/others/logUserAction");
 
 const {
     CreateMemberPersonalDataResDTO,
-    CreateMemberSocialResDTO
+    CreateMemberSocialResDTO,
+    CreateMemberEducationResDTO,
+    CreateMemberExpResDTO
 } = require("../dtos/member.dto");
 
 class MemberService {
@@ -118,8 +120,68 @@ class MemberService {
         const member = await Member.findOne({ user: user._id });
         if (!member) throw new Error("Create personal data first");
 
-        
+        const educationEntry = {};
+        if (school) educationEntry.school = school;
+        if (course) educationEntry.course = course;
+        if (startat) educationEntry.startat = startat;
+        if (endat) educationEntry.endat = endat;
 
+        member.education.push(educationEntry);
+
+        const updatemember = await member.save();
+
+        if (updatemember) {
+            if (req) {
+                const metadata = {
+                    ipAddress: req.headers["x-forwarded-for"] || req.socket.remoteAddress,
+                    userAgent: req.headers["user-agent"],
+                    timestamp: new Date(),
+                };
+                await logUserAction(req, "Update Education", `${decoded.email} Education Updated`, metadata, user._id);
+            }
+
+            return CreateMemberEducationResDTO()
+        }
+    }
+
+    static async CreateExp(token, workplace, job, startat, endat, req) {
+        let decoded;
+
+        try {
+            decoded = jwt.verify(token, process.env.JWT_SECRET);
+        } catch (err) {
+            if (err.name === "TokenExpiredError") throw new Error("Token expired");
+            throw new Error("Invalid token");
+        }
+
+        const user = await User.findOne({ email: decoded.email });
+        if (!user) throw new Error("User not found");
+
+        const member = await Member.findOne({ user: user._id });
+        if (!member) throw new Error("Create personal data first");
+
+        const expEntry = {};
+        if (workplace) expEntry.workplace = workplace;
+        if (job) expEntry.job = job;
+        if (startat) expEntry.startat = startat;
+        if (endat) expEntry.endat = endat;
+
+        member.exp.push(expEntry);
+
+        const updatemember = await member.save();
+
+        if (updatemember) {
+            if (req) {
+                const metadata = {
+                    ipAddress: req.headers["x-forwarded-for"] || req.socket.remoteAddress,
+                    userAgent: req.headers["user-agent"],
+                    timestamp: new Date(),
+                };
+                await logUserAction(req, "Update work experience", `${decoded.email} work experience Updated`, metadata, user._id);
+            }
+
+            return CreateMemberExpResDTO()
+        }
     }
 }
 
