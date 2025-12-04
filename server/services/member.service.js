@@ -8,7 +8,8 @@ const {
     CreateMemberSocialResDTO,
     CreateMemberEducationResDTO,
     CreateMemberExpResDTO,
-    CreateMemberAIAPIResDTO
+    CreateMemberAIAPIResDTO,
+    GetUserDataResDTO
 } = require("../dtos/member.dto");
 
 class MemberService {
@@ -224,6 +225,24 @@ class MemberService {
 
             return CreateMemberAIAPIResDTO()
         }
+    }
+
+    static async GetAllMembers(token) {
+        let decoded;
+
+        try {
+            decoded = jwt.verify(token, process.env.JWT_SECRET);
+        } catch (err) {
+            if (err.name === "TokenExpiredError") throw new Error("Token expired");
+            throw new Error("Invalid token");
+        }
+
+        const user = await User.findOne({ email: decoded.email });
+        if (!user) throw new Error("User not found");
+
+        const fetchmember = await Member.findOne({ user: user._id })
+
+        return GetUserDataResDTO(fetchmember)
     }
 }
 

@@ -59,6 +59,8 @@ exports.CreateMemberAIAPIResDTO = (message = "User AI API Saved Successfully") =
     message
 });
 
+exports.GetUserDataResDTO = (result, message="All Members Fetched Successfully") => ({ success: true, result, message })
+
 exports.ErrorResDTO = (message = "Something went wrong") => ({
     success: false,
     message
