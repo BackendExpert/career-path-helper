@@ -6,4 +6,6 @@ const router = express.Router();
 
 router.get('/github-profile', auth, GithubController.getUserProfile)
 
+router.get('/github-repos', auth, GithubController.getallrepos)
+
 module.exports = router;
