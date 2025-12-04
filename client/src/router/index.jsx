@@ -19,6 +19,7 @@ import Levels from '../pages/Dashboard/Users/Levels'
 import ViewRole from '../pages/Dashboard/Users/ViewRole'
 import SystemLogs from '../pages/Dashboard/SystemLogs'
 import Account from '../pages/CommonDash/Settings/Account'
+import Repos from '../pages/CommonDash/Github/Repos'
 
 function App() {
     return (
@@ -38,6 +39,7 @@ function App() {
                         <Route index element={<PrivateRoute roles={['admin', 'intern', 'undergraduate', 'ase', 'se']}><DashHome /> </PrivateRoute>} />
 
                         <Route path='settings/account' element={<PrivateRoute roles={['admin', 'intern', 'undergraduate', 'ase', 'se']}><Account /> </PrivateRoute>} />
+                        <Route path='github/repos' element={<PrivateRoute roles={['admin', 'intern', 'undergraduate', 'ase', 'se']}><Repos /> </PrivateRoute>} />
 
 
                         {/* admin */}
@@ -45,7 +47,8 @@ function App() {
                         <Route path='admin/levels' element={<PrivateRoute roles={['admin']}><Levels /> </PrivateRoute>} />
                         <Route path='admin/levels/view/:id' element={<PrivateRoute roles={['admin']}><ViewRole /> </PrivateRoute>} />
                         <Route path='admin/logs' element={<PrivateRoute roles={['admin']}><SystemLogs /> </PrivateRoute>} />
-                        
+
+
 
                     </Route>
 
