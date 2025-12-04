@@ -19,7 +19,8 @@ require("dotenv").config();
 
 const authRoute = require("./routes/auth.route")
 const roleRoute = require("./routes/role.route")
-
+const adminRoute = require("./routes/admin.route")
+const memberRoute = require("./routes/member.route")
 
 // ---------------------- END of Importing Routes
 
@@ -109,6 +110,8 @@ app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 
 app.use('/api/auth', authRoute)
 app.use('/api/role', roleRoute)
+app.use('/api/admin', adminRoute)
+app.use('/api/member', memberRoute)
 
 // -------------- END routes-----------------------
 

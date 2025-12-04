@@ -8,12 +8,10 @@ import { useAuth } from "../../context/AuthContext";
 
 import {
     BiSolidDashboard,
-    BiTimeFive,
     BiBarChartSquare,
 } from "react-icons/bi";
-import { FaUserGraduate, FaCog, FaQuestion } from "react-icons/fa";
-import { MdEvent, MdLogout } from "react-icons/md";
-import { FiBook } from "react-icons/fi";
+import { FaCog, FaUser, FaFolderOpen, FaTools, FaBullseye, FaRobot, FaGithub, FaHandsHelping, FaUsersCog } from "react-icons/fa";
+import { MdLogout } from "react-icons/md";
 import { motion } from "framer-motion";
 import { ChevronDown, ChevronRight } from "lucide-react";
 import "./DashSide.css";
@@ -53,75 +51,119 @@ const DashSide = ({ closeSidebar }) => {
         {
             name: "Dashboard",
             icon: <BiSolidDashboard />,
-            link: "/Dashboard",
+            link: "/dashboard",
+            roles: ["admin","undergraduate","intern","ase","se"],
         },
+
         {
-            name: "Interns",
-            icon: <FaUserGraduate />,
-            submenu: [{ name: "Manage Interns", link: "/Dashboard/interns" }],
-        },
-        {
-            name: "Attendance",
-            icon: <BiTimeFive />,
+            name: "Projects",
+            icon: <FaFolderOpen />,
             submenu: [
-                { name: "Daily Attendance", link: "/Dashboard/daily" },
-                { name: "Attendance Summary", link: "/Dashboard/summary" },
+                { name: "My Projects", link: "/dashboard/projects" },
+                { name: "AI Project Review", link: "/dashboard/projects/ai-review" },
             ],
+            roles: ["admin","undergraduate","intern","ase","se"],
         },
+
+        {
+            name: "Skills",
+            icon: <FaTools />,
+            submenu: [
+                { name: "Current Skills", link: "/dashboard/skills" },
+                { name: "Missing Skills", link: "/dashboard/skills/missing" },
+                { name: "Skill Growth Plan", link: "/dashboard/skills/plan" },
+            ],
+            roles: ["admin","undergraduate","intern","ase","se"],
+        },
+
+        {
+            name: "Goals",
+            icon: <FaBullseye />,
+            submenu: [
+                { name: "Nearest Goal", link: "/dashboard/goals/nearest" },
+                { name: "Long-term Goal", link: "/dashboard/goals/long-term" },
+                { name: "Step-by-Step Roadmap", link: "/dashboard/goals/roadmap" },
+            ],
+            roles: ["admin","undergraduate","intern","ase","se"],
+        },
+
+        {
+            name: "AI Suggestions",
+            icon: <FaRobot />,
+            submenu: [
+                { name: "Ask Anything", link: "/dashboard/ai" },
+            ],
+            roles: ["admin","undergraduate","intern","ase","se"],
+        },
+
+        {
+            name: "GitHub Insights",
+            icon: <FaGithub />,
+            submenu: [
+                { name: "Repositories", link: "/dashboard/github/repos" },
+                { name: "Languages Used", link: "/dashboard/github/languages" },
+                { name: "Coding Patterns", link: "/dashboard/github/patterns" },
+            ],
+            roles: ["admin","ase","se"],
+        },
+
+        {
+            name: "Mentorship",
+            icon: <FaHandsHelping />,
+            submenu: [
+                { name: "Get Help from Seniors", link: "/dashboard/help/seniors" },
+            ],
+            roles: ["admin","undergraduate","intern","ase","se"],
+        },
+
         {
             name: "Reports",
             icon: <BiBarChartSquare />,
             submenu: [
-                { name: "Attendance Reports", link: "/Dashboard/attendance" },
-                { name: "Performance Reports", link: "/Dashboard/performance" },
-                { name: "Monthly Overview", link: "/Dashboard/monthly" },
+                { name: "Skill Report", link: "/dashboard/reports/skills" },
+                { name: "Project Report", link: "/dashboard/reports/projects" },
+                { name: "Progress Timeline", link: "/dashboard/reports/timeline" },
             ],
+            roles: ["admin","undergraduate","intern","ase","se"],
         },
+
         {
-            name: "Meetings",
-            icon: <MdEvent />,
+            name: "Admin Panel",
+            icon: <FaUsersCog />,
             submenu: [
-                { name: "Manage Meetings", link: "/Dashboard/meeting" },
-                { name: "Create Meeting", link: "/Dashboard/create-meeting" },
+                { name: "All Users", link: "/dashboard/admin/users" },
+                { name: "User Levels", link: "/dashboard/admin/levels" },
+                { name: "System Logs", link: "/dashboard/admin/logs" },
             ],
+            roles: ["admin"],
         },
-        {
-            name: "Resources",
-            icon: <FiBook />,
-            link: "/Dashboard/resources",
-        },
-        {
-            name: "FAQ & Help",
-            icon: <FaQuestion />,
-            link: "/Dashboard/faq",
-        },
+
         {
             name: "Settings",
             icon: <FaCog />,
             submenu: [
-                { name: "Profile Settings", link: "/Dashboard/profile" },
-                { name: "System Configuration", link: "/Dashboard/system" },
-                { name: "User Activities", link: "/Dashboard/logs" },
+                { name: "Account Settings", link: "/dashboard/settings/account" },
+                { name: "Security Settings", link: "/dashboard/settings/security" },
             ],
+            roles: ["admin","undergraduate","intern","ase","se"],
         },
     ];
 
-    const filteredNavItems =
-        auth?.role === "staff"
-            ? navitem.filter((item) => item.name !== "Settings")
-            : navitem;
+    const filteredNavItems = navitem.filter((item) =>
+        item.roles.includes(auth?.role)
+    );
 
     return (
         <motion.aside
             initial={{ width: 300, opacity: 0 }}
             animate={{ width: collapsed ? 96 : 280, opacity: 1 }}
             transition={{ duration: 0.4, ease: "easeInOut" }}
-            className="relative h-screen flex flex-col bg-gradient-to-b from-white to-emerald-50 overflow-hidden"
+            className="relative h-screen flex flex-col bg-gradient-to-b from-white to-white overflow-hidden"
         >
             <div className="flex-1 overflow-y-auto custom-scrollbar">
 
                 {/* Logo */}
-                <div className="flex items-center pb-4 pt-5 sticky top-0 bg-gradient-to-b from-white to-emerald-50 z-10">
+                <div className="flex items-center pb-4 pt-5 sticky top-0 bg-gradient-to-b from-white to-white z-10">
                     <motion.img
                         src={uoplogo}
                         alt="Logo"
@@ -152,8 +194,8 @@ const DashSide = ({ closeSidebar }) => {
                                     <button
                                         onClick={() => toggleSubmenu(index)}
                                         className={`group relative flex items-center justify-between w-full px-4 py-2 rounded-xl font-medium transition-all duration-300 ${openMenu === index
-                                                ? "text-emerald-600 bg-emerald-100 shadow-sm"
-                                                : "text-gray-600 hover:text-emerald-600 hover:bg-emerald-50"
+                                            ? "text-emerald-600 bg-emerald-100 shadow-sm"
+                                            : "text-gray-600 hover:text-emerald-600 hover:bg-emerald-50"
                                             }`}
                                     >
                                         <div className="flex items-center gap-3">

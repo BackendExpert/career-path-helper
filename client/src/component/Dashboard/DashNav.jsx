@@ -162,7 +162,7 @@ const DashNav = () => {
                                         <ul className="py-1 text-sm text-gray-600">
                                             <li>
                                                 <Link
-                                                    to="/Dashboard/my-profile"
+                                                    to="/Dashboard/settings/account"
                                                     className="block px-4 py-2 hover:bg-gray-50"
                                                 >
                                                     My Profile

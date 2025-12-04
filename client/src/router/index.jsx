@@ -14,6 +14,11 @@ import DashHome from '../pages/Dashboard/DashHome'
 import DevDashboard from '../layouts/DevDashboard'
 import DevHome from '../pages/DevDashboard/DevHome'
 import HomePage from '../pages/HomePage/HomePage'
+import User from '../pages/Dashboard/Users/User'
+import Levels from '../pages/Dashboard/Users/Levels'
+import ViewRole from '../pages/Dashboard/Users/ViewRole'
+import SystemLogs from '../pages/Dashboard/SystemLogs'
+import Account from '../pages/CommonDash/Settings/Account'
 
 function App() {
     return (
@@ -31,6 +36,17 @@ function App() {
                     <Route path='/Dashboard' element={<PrivateRoute roles={['admin', 'intern', 'undergraduate', 'ase', 'se']}><Dashboard /></PrivateRoute>}>
                         <Route path='*' element={<PrivateRoute roles={['admin', 'intern', 'undergraduate', 'ase', 'se']}><DashError /> </PrivateRoute>} />
                         <Route index element={<PrivateRoute roles={['admin', 'intern', 'undergraduate', 'ase', 'se']}><DashHome /> </PrivateRoute>} />
+
+                        <Route path='settings/account' element={<PrivateRoute roles={['admin', 'intern', 'undergraduate', 'ase', 'se']}><Account /> </PrivateRoute>} />
+
+
+                        {/* admin */}
+                        <Route path='admin/users' element={<PrivateRoute roles={['admin']}><User /> </PrivateRoute>} />
+                        <Route path='admin/levels' element={<PrivateRoute roles={['admin']}><Levels /> </PrivateRoute>} />
+                        <Route path='admin/levels/view/:id' element={<PrivateRoute roles={['admin']}><ViewRole /> </PrivateRoute>} />
+                        <Route path='admin/logs' element={<PrivateRoute roles={['admin']}><SystemLogs /> </PrivateRoute>} />
+                        
+
                     </Route>
 
                 </Route>

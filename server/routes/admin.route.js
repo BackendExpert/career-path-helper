@@ -2,7 +2,6 @@ const express = require('express');
 const auth = require('../middlewares/authMiddleware');
 const checkPermission = require('../middlewares/checkPermission');
 const AdminController = require('../controllers/admin.controller');
-const MemberController = require('../controllers/member.controller');
 
 const router = express.Router();
 
@@ -19,6 +18,5 @@ router.get('/user-logs', auth, checkPermission(['user:get-user-logs']), AdminCon
 
 router.get('/get-one-log/:id', auth, checkPermission(['user:get-one-user-log']), AdminController.useronegetlogs)
 
-router.get('/get-users-personal-infor', auth, checkPermission(['user:personal-data']), MemberController.getalluserpersonaldata)
 
 module.exports = router;
