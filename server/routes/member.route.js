@@ -15,4 +15,6 @@ router.post('/create-exp', auth, MemberController.createExp)
 
 router.post('/create-aiapi', auth, MemberController.createAIAPI)
 
+router.get('/get-member-data', auth, MemberController.getallmembers)
+
 module.exports = router;

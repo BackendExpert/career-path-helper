@@ -83,7 +83,6 @@ const Experience = () => {
                         label="End Date"
                         name="endat"
                         value={values.endat}
-                        required
                         onChange={handleChange}
                     />
                 </div>
