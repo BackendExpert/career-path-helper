@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import useForm from "../../../hooks/useForm";
 import DefaultButton from "../../../component/Buttons/DefaultButton";
 import DefaultInput from "../../../component/Form/DefaultInput";
@@ -46,6 +46,27 @@ const Experience = () => {
         }
     };
 
+
+    const [memberdata, setmemberdata] = useState([])
+
+    useEffect(() => {
+        const fetchmemberdata = async () => {
+            try {
+                const res = await API.get(`/member/get-member-data?nocache=${Date.now()}`, {
+                    headers: { Authorization: `Bearer ${token}` },
+                });
+
+                setmemberdata(res.data.result);
+            }
+            catch (err) {
+                console.log(err)
+            }
+        }
+
+        if (token) fetchmemberdata()
+    }, [token])
+
+
     return (
         <div className="p-2 space-y-6">
             {toast && <Toast success={toast.success} message={toast.message} />}
@@ -92,6 +113,47 @@ const Experience = () => {
                     label={loading ? "Saving..." : "Save Experience"}
                 />
             </form>
+
+            <div className="">
+                {memberdata?.exp?.length > 0 ? (
+                    memberdata.exp.map((exper, index) => (
+                        <div
+                            key={index}
+                            className="p-4 rounded-xl bg-gray-50 border border-gray-200 shadow-sm"
+                        >
+                            <div className="text-lg font-semibold text-gray-800">
+                                {exper.workplace || "Unknown School"}
+                            </div>
+
+                            {exper.job && (
+                                <div className="text-sm text-gray-600 mt-1">
+                                    {exper.job}
+                                </div>
+                            )}
+
+                            {(exper.startat || exper.endat) && (
+                                <div className="text-xs text-gray-500 mt-2">
+                                    {exper.startat
+                                        ? isNaN(new Date(exper.startat))
+                                            ? ""
+                                            : new Date(exper.startat).toLocaleDateString()
+                                        : ""}
+
+                                    {" — "}
+
+                                    {exper.endat
+                                        ? isNaN(new Date(exper.endat))
+                                            ? "Present"
+                                            : new Date(exper.endat).toLocaleDateString()
+                                        : "Present"}
+                                </div>
+                            )}
+                        </div>
+                    ))
+                ) : (
+                    <div className="text-gray-500 text-sm">No Experience records found.</div>
+                )}
+            </div>
         </div>
     );
 };
