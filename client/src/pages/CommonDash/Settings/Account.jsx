@@ -7,7 +7,6 @@ import Social from "./Social";
 import APIConnected from "./APIConnected";
 import { FaLink } from "react-icons/fa6";
 import { IoShareSocial } from "react-icons/io5";
-import UpdatePassword from "./UpdatePassword";
 import Education from "./Education";
 import Experience from "./Experience";
 
@@ -45,12 +44,6 @@ const Account = () => {
             name: "API Connected",
             icon: FaLink,
             content: <APIConnected />
-        },
-        {
-            id: 6,
-            name: "Password Update",
-            icon: FaUserLock,
-            content: <UpdatePassword />
         },
     ];
 

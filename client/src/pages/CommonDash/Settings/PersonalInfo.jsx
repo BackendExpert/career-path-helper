@@ -1,35 +1,86 @@
-import React from "react";
+import React, { useState } from "react";
 import DefaultInput from "../../../component/Form/DefaultInput";
 import Dropdown from "../../../component/Form/Dropdown";
 import FileInput from "../../../component/Form/FileInput";
 import TextAreaInput from "../../../component/Form/TextAreaInput";
 import useForm from "../../../hooks/useForm";
 import DefaultButton from "../../../component/Buttons/DefaultButton";
+import Toast from "../../../component/Toast/Toast";
+import API from "../../../services/api";
 
 const PersonalInfo = () => {
-    const { values, handleChange } = useForm({
+    const token = localStorage.getItem("token");
+    const [loading, setLoading] = useState(false);
+    const [toast, setToast] = useState(null);
+
+    const { values, handleChange, setFieldValue } = useForm({
         fname: "",
         lname: "",
-        email: "",
         mobile: "",
         gender: "",
         currentjob: "",
-        bio: "",
-        avatar: null
+        shortbio: "",
+        profileimage: null
     });
+
+    const handleFile = (e) => {
+        setFieldValue("profileimage", e.target.files[0]);
+    };
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        setLoading(true);
+
+        try {
+            const formData = new FormData();
+
+            Object.keys(values).forEach((key) => {
+                if (key !== "profileimage") formData.append(key, values[key]);
+            });
+
+            if (values.profileimage) {
+                formData.append("profileimage", values.profileimage);
+            }
+
+            const res = await API.post(
+                "/member/create-member-personaldata",
+                formData,
+                {
+                    headers: {
+                        Authorization: `Bearer ${token}`,
+                        "Content-Type": "multipart/form-data",
+                    },
+                }
+            );
+
+            if (res.data.success === true) {
+                setToast({ success: true, message: res.data.message });
+                setTimeout(() => window.location.reload(), 2000);
+            } else {
+                setToast({ success: false, message: res.data.message });
+            }
+        } catch (err) {
+            setToast({
+                success: false,
+                message: err.response?.data?.message || "Something went wrong.",
+            });
+        } finally {
+            setLoading(false);
+        }
+    };
 
     return (
         <div className="p-2">
-            <form method="post" className="space-y-6">
+            {toast && <Toast success={toast.success} message={toast.message} />}
 
-                {/* ROW 1 */}
+            <form method="post" onSubmit={handleSubmit} className="space-y-6">
+
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <DefaultInput
                         label="First Name"
                         placeholder="Enter First Name"
                         name="fname"
                         value={values.fname}
-                        required
                         onChange={handleChange}
                     />
 
@@ -38,40 +89,26 @@ const PersonalInfo = () => {
                         placeholder="Enter Last Name"
                         name="lname"
                         value={values.lname}
-                        required
                         onChange={handleChange}
                     />
                 </div>
 
-                {/* ROW 2 */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <DefaultInput
-                        label="Email Address"
-                        placeholder="Enter Email"
-                        name="email"
-                        value={values.email}
-                        required
-                        onChange={handleChange}
-                        type="email"
-                    />
 
                     <DefaultInput
                         label="Mobile Number"
                         placeholder="Enter Mobile Number"
                         name="mobile"
                         value={values.mobile}
-                        required
                         onChange={handleChange}
                         type="tel"
                     />
                 </div>
 
-                {/* ROW 3 */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <Dropdown
                         label="Gender"
                         name="gender"
-                        required
                         onChange={handleChange}
                         options={[
                             { label: "Male", value: "male" },
@@ -89,32 +126,26 @@ const PersonalInfo = () => {
                     />
                 </div>
 
-
-                {/* BIO */}
                 <TextAreaInput
                     label="Short Bio"
-                    name="bio"
+                    name="shortbio"
                     rows={4}
-                    value={values.bio}
+                    value={values.shortbio}
                     onChange={handleChange}
                     placeholder="Write a short introduction about yourself..."
                 />
 
-                {/* FILE UPLOAD */}
                 <FileInput
                     label="Upload Profile Picture"
-                    name="avatar"
-                    onChange={handleChange}
+                    name="profileimage"
+                    onChange={handleFile}
                     accept="image/*"
                 />
 
-                <div className="">
-                    <DefaultButton 
-                        type="submit"
-                        label="Save Profile"
-                    />
-                </div>
-
+                <DefaultButton
+                    type="submit"
+                    label={loading ? "Saving..." : "Save Profile"}
+                />
             </form>
         </div>
     );
