@@ -11,7 +11,7 @@ const GithubProjects = () => {
     const [toast, setToast] = useState(null);
     const token = localStorage.getItem('token');
     const [loading, setLoading] = useState(false);
-    
+
     const { values, handleChange } = useForm({
         selectedproject: '',
     });
@@ -48,31 +48,30 @@ const GithubProjects = () => {
             return;
         }
 
+        setLoading(true);
+
         try {
             const res = await API.post(
                 "/project/connect-project",
-                values,
+                { project_name: values.selectedproject },
                 { headers: { Authorization: `Bearer ${token}` } }
             );
 
             if (res.data.success) {
                 setToast({ success: true, message: res.data.message });
-                resetForm();
                 setTimeout(() => window.location.reload(), 2000);
+
             } else {
                 setToast({ success: false, message: res.data.message });
             }
         } catch (err) {
-            const message =
-                err.response?.data?.message ||
-                "Request failed. Please try again.";
-
+            const message = err.response?.data?.message || "Request failed. Please try again.";
             setToast({ success: false, message });
+            console.log(message);
         } finally {
             setLoading(false);
         }
     };
-
     return (
         <div className="p-4">
             {toast && (
