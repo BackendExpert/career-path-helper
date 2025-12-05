@@ -1,4 +1,5 @@
 const {
+    SearchRepoDTO,
     ErrorResDTO
 } = require("../dtos/github.dto");
 const GithubService = require("../services/github.service");
@@ -19,14 +20,43 @@ const GithubController = {
     },
 
     getallrepos: async (req, res) => {
-        try{
+        try {
             const token = req.header("Authorization")?.replace("Bearer ", "");
             if (!token) return res.status(401).json({ message: "Access denied" });
 
             const result = await GithubService.GetUserAllRepos(token)
             res.status(200).json(result)
         }
-        catch(err){
+        catch (err) {
+            return res.status(400).json(ErrorResDTO(err.message));
+        }
+    },
+
+    seachgithubrepos: async (req, res) => {
+        try {
+            const token = req.header("Authorization")?.replace("Bearer ", "");
+            if (!token) return res.status(401).json({ message: "Access denied" });
+
+            const {
+                reponame,
+                language,
+                filtersdate,
+                filterenddate
+            } = req.body
+
+            const dto = SearchRepoDTO(token, reponame, language, filtersdate, filterenddate)
+
+            const result = await GithubService.SeachGithubRepos(
+                dto.token,
+                dto.reponame,
+                dto.language,
+                dto.filtersdate,
+                dto.filterenddate
+            )
+
+            res.status(200).json(result)
+        }
+        catch (err) {
             return res.status(400).json(ErrorResDTO(err.message));
         }
     }

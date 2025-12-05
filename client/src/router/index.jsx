@@ -20,6 +20,7 @@ import ViewRole from '../pages/Dashboard/Users/ViewRole'
 import SystemLogs from '../pages/Dashboard/SystemLogs'
 import Account from '../pages/CommonDash/Settings/Account'
 import Repos from '../pages/CommonDash/Github/Repos'
+import Searchrepo from '../pages/CommonDash/Github/Searchrepo'
 
 function App() {
     return (
@@ -40,6 +41,8 @@ function App() {
 
                         <Route path='settings/account' element={<PrivateRoute roles={['admin', 'intern', 'undergraduate', 'ase', 'se']}><Account /> </PrivateRoute>} />
                         <Route path='github/repos' element={<PrivateRoute roles={['admin', 'intern', 'undergraduate', 'ase', 'se']}><Repos /> </PrivateRoute>} />
+                        <Route path='github/repo-search' element={<PrivateRoute roles={['admin', 'intern', 'undergraduate', 'ase', 'se']}><Searchrepo /> </PrivateRoute>} />
+
 
 
                         {/* admin */}

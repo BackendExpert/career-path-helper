@@ -8,4 +8,6 @@ router.get('/github-profile', auth, GithubController.getUserProfile)
 
 router.get('/github-repos', auth, GithubController.getallrepos)
 
+router.post('/search-repo', auth, GithubController.seachgithubrepos)
+
 module.exports = router;
