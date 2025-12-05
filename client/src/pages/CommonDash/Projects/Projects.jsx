@@ -25,6 +25,24 @@ const Projects = () => {
         if (token) fetchProfile();
     }, [token]);
 
+    const [allConnectedProjects, setAllConnectedProjects] = useState([]);
+
+    useEffect(() => {
+        const fetchConnectedProjects = async () => {
+            try {
+                const res = await API.get(
+                    `/project/get-connected-projects?nocache=${Date.now()}`,
+                    { headers: { Authorization: `Bearer ${token}` } }
+                );
+                setAllConnectedProjects(res.data?.result || []);
+            } catch (err) {
+                console.log(err);
+            }
+        };
+
+        if (token) fetchConnectedProjects();
+    }, [token]);
+
     const steps = [
         "This release only fetches projects from the user's GitHub profile.",
         "You must connect your GitHub profile to this system.",
@@ -43,7 +61,7 @@ const Projects = () => {
         {
             id: 2,
             name: "Connected Projects",
-            count: 50,
+            count: allConnectedProjects.length,
             icon: FaProjectDiagram,
         },
     ]

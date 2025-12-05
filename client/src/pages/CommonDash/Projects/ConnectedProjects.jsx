@@ -71,7 +71,7 @@ const ConnectedProjects = () => {
                         </div>
 
                         {/* Stats */}
-                        <div className="mt-6 grid grid-cols-3 gap-4">
+                        <div className="mt-6 grid md:grid-cols-3 gap-4">
                             <div className="text-center p-3 rounded-lg border border-gray-200 bg-gray-50">
                                 <Star size={18} className="mx-auto text-gray-700" />
                                 <p className="font-semibold text-gray-800">
