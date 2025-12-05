@@ -6,4 +6,6 @@ const router = express.Router();
 
 router.post('/connect-project', auth, ProjectController.connectProject)
 
+router.get('/get-connected-projects', auth, ProjectController.getconnectedprojects)
+
 module.exports = router;
