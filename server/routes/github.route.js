@@ -12,4 +12,6 @@ router.post('/search-repo', auth, GithubController.seachgithubrepos)
 
 router.post('/save-repo', auth, GithubController.saveRepo)
 
+router.get('/savedrepos', auth, GithubController.getsavedRepos)
+
 module.exports = router;

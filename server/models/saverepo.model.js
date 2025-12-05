@@ -6,6 +6,10 @@ const SavedReposSchema = new mongoose.Schema({
         ref: 'User',
         required: true
     },
+    repo_owner: {
+        type: String,
+        required: true
+    },
     reponame: {
         type: String,
         required: true

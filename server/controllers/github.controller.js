@@ -68,14 +68,16 @@ const GithubController = {
             if (!token) return res.status(401).json({ message: "Access denied" });
 
             const {
-                repo
+                repo,
+                repo_owner
             } = req.body
 
-            const dto = SaveRepoDTO(token, repo)
+            const dto = SaveRepoDTO(token, repo, repo_owner)
 
             const result = await GithubService.SaveRepos(
                 dto.token,
                 dto.reponame,
+                dto.repo_owner,
                 req
             )
 
@@ -83,6 +85,19 @@ const GithubController = {
 
         }
         catch (err) {
+            return res.status(400).json(ErrorResDTO(err.message));
+        }
+    },
+
+    getsavedRepos: async (req, res) => {
+        try{
+            const token = req.header("Authorization")?.replace("Bearer ", "");
+            if (!token) return res.status(401).json({ message: "Access denied" });
+
+            const result = await GithubService.GetSavedRepos(token)
+            res.status(200).json(result)
+        }
+        catch(err){
             return res.status(400).json(ErrorResDTO(err.message));
         }
     }

@@ -5,7 +5,7 @@ exports.GetUserAllReposResDTO = (result, message="User Repos Fetched Successuful
 exports.SearchRepoDTO = (token, reponame, language, filtersdate, filterenddate) => ({ token, reponame, language, filtersdate, filterenddate })
 exports.SearchRepoResDTO = (count, result, message = "Search Repo Successfully") => ({ success: true, count, result, message})
 
-exports.SaveRepoDTO = (token, reponame) => ({ token, reponame })
+exports.SaveRepoDTO = (token, reponame, repo_owner) => ({ token, reponame, repo_owner })
 exports.SaveRepoResDTO = (message = "Repo Saved Successfully") => ({ success: true, message})
 
 exports.GetAllSavedReposResDTO = (result, message="Saved Repos Fetched Successfully") => ({ success: true, result, message })

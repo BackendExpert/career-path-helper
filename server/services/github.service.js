@@ -6,7 +6,8 @@ const {
     GetUserGithubProfileResDTO,
     GetUserAllReposResDTO,
     SearchRepoResDTO,
-    SaveRepoResDTO
+    SaveRepoResDTO,
+    GetAllSavedReposResDTO
 } = require("../dtos/github.dto");
 
 const github = require("../utils/apis/github");
@@ -122,7 +123,7 @@ class GithubService {
 
     }
 
-    static async SaveRepos(token, reponame, req) {
+    static async SaveRepos(token, reponame, repo_owner, req) {
         let decoded;
 
         try {
@@ -143,6 +144,7 @@ class GithubService {
 
         const saverepo = new SavedRepos({
             user: user._id,
+            repo_owner: repo_owner,
             reponame: reponame
         })
 
@@ -155,11 +157,44 @@ class GithubService {
                     userAgent: req.headers["user-agent"],
                     timestamp: new Date(),
                 };
-                await logUserAction(req, "Update Social Accounts", `${decoded.email} updated social accounts`, metadata, user._id);
+                await logUserAction(req, "Repo Saved", `${decoded.email} Repo saved ${reponame}`, metadata, user._id);
             }
 
             return SaveRepoResDTO()
         }
+    }
+
+    static async GetSavedRepos(token) {
+        let decoded;
+
+        try {
+            decoded = jwt.verify(token, process.env.JWT_SECRET);
+        } catch (err) {
+            if (err.name === "TokenExpiredError") throw new Error("Token expired");
+            throw new Error("Invalid token");
+        }
+
+        const user = await User.findOne({ email: decoded.email });
+        if (!user) throw new Error("User not found");
+
+        const getmemberdata = await Member.findOne({ user: user._id });
+        if (!getmemberdata) throw new Error("Member data not found");
+
+        const getrepos = await SavedRepos.find({ user: user._id })
+
+        const repoDataPromises = getrepos.map(async (repo) => {
+            try {
+                const response = await github.get(`/repos/${repo.repo_owner}/${repo.reponame}`);
+                return response.data;
+            } catch (err) {
+                console.error(`Failed to fetch repo ${repo.repo_owner}/${repo.reponame}:`, err.message);
+                return { error: `Repo ${repo.repo_owner}/${repo.reponame} not found` };
+            }
+        });
+
+        const reposData = await Promise.all(repoDataPromises);
+
+        return GetAllSavedReposResDTO(reposData)
     }
 
 }

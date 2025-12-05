@@ -75,31 +75,30 @@ const SearchrepoContent = () => {
     //     }
     // };
 
-    const handleSaveRepo = async (reponame) => {
+    const handleSaveRepo = async (reponame, repoowner) => {
         if (!reponame) {
-            setToast({ success: false, message: "Repository name is missing" });
+            alert(res.data.message)
             return;
         }
         try {
             const res = await API.post(
                 "/github/save-repo",
-                { repo: reponame },
+                { repo: reponame, repo_owner: repoowner },
                 { headers: { Authorization: `Bearer ${token}` } }
             );
 
-            if (res.data.success) {
-                setToast({ success: true, message: res.data.message });
+            if (res.data.success === true) {
+                alert(res.data.message)
             } else {
-                setToast({ success: false, message: res.data.message });
+                alert(res.data.message)
             }
         } catch (err) {
-            const message =
-                err.response?.data?.message || "Request failed. Please try again.";
-            setToast({ success: false, message });
+            alert(err)
         } finally {
             setLoading(false);
         }
     };
+
 
 
     return (
@@ -186,11 +185,12 @@ const SearchrepoContent = () => {
 
                                 <button
                                     type="button"
-                                    onClick={() => handleSaveRepo(repo.name)}
+                                    onClick={() => handleSaveRepo(repo.name, repo.owner.login)}
                                     className="px-4 py-2 bg-emerald-600 text-white rounded-lg hover:bg-emerald-700 transition"
                                 >
                                     Save Repo
                                 </button>
+
                             </div>
                         </div>
                     ))

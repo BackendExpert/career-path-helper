@@ -2,15 +2,35 @@ import React, { useState } from "react";
 import { FaBookmark, FaSearch } from "react-icons/fa";
 import SearchrepoContent from "./SearchrepoContent";
 import SavedRepos from "./SavedRepos";
+import API from "../../../services/api";
+import { useEffect } from "react";
+
 
 const Searchrepo = () => {
     const [active, setActive] = useState(1);
+    const [savedrepos, setsavedrepos] = useState([]);
+    const token = localStorage.getItem("token");
+
+    useEffect(() => {
+        const fetchAllSavedRepos = async () => {
+            try {
+                const res = await API.get(`/github/savedrepos?nocache=${Date.now()}`, {
+                    headers: { Authorization: `Bearer ${token}` },
+                });
+                setsavedrepos(Array.isArray(res.data.result) ? res.data.result : []);
+            } catch (err) {
+                console.log(err);
+            }
+        };
+
+        if (token) fetchAllSavedRepos();
+    }, [token]);
 
     const repodata = [
         {
             id: 1,
             name: "Saved Repos",
-            count: 40,
+            count: savedrepos.length,
             icon: FaBookmark,
         },
     ];
@@ -24,7 +44,7 @@ const Searchrepo = () => {
         },
         {
             id: 2,
-            name: "Saved Repos",
+            name: "Your Saved Repositories",
             icon: FaBookmark,
             content: <SavedRepos />,
         },
