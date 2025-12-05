@@ -101,7 +101,7 @@ const DashSide = ({ closeSidebar }) => {
             icon: <FaGithub />,
             submenu: [
                 { name: "Repositories", link: "/dashboard/github/repos" },
-                { name: "Languages Used", link: "/dashboard/github/languages" },
+                { name: "Search Repo", link: "/dashboard/github/repo-search" },
                 { name: "Coding Patterns", link: "/dashboard/github/patterns" },
             ],
             roles: ["admin","ase","se"],
