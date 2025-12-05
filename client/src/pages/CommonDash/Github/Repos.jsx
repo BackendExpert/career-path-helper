@@ -72,6 +72,15 @@ const Repos = () => {
         { id: 3, name: "Followings", count: githubprofile?.following || 0, icon: <FaUsersRays size={40} /> }
     ];
 
+    // Show message if GitHub profile not connected
+    if (!githubprofile) {
+        return (
+            <div className="p-6 bg-yellow-100 text-yellow-800 rounded-xl text-center font-semibold">
+                You are not connected with your GitHub profile.
+            </div>
+        );
+    }
+
     return (
         <div className="p-4">
             <div className="flex flex-col md:flex-row gap-6">

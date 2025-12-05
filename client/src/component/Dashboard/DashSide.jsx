@@ -84,7 +84,7 @@ const DashSide = ({ closeSidebar }) => {
                 { name: "Search Repo", link: "/dashboard/github/repo-search" },
                 { name: "Coding Patterns", link: "/dashboard/github/patterns" },
             ],
-            roles: ["admin", "ase", "se"],
+            roles: ["admin", "undergraduate", "intern", "ase", "se"],
         },
 
         {
