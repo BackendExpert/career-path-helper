@@ -10,7 +10,8 @@ const GithubProjects = () => {
     const [search, setSearch] = useState('');
     const [toast, setToast] = useState(null);
     const token = localStorage.getItem('token');
-
+    const [loading, setLoading] = useState(false);
+    
     const { values, handleChange } = useForm({
         selectedproject: '',
     });
@@ -40,14 +41,36 @@ const GithubProjects = () => {
         setSearch(repoName);
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
         if (!values.selectedproject) {
             setToast({ success: false, message: "Please select a project first!" });
             return;
         }
-        setToast({ success: true, message: `Connected project: ${values.selectedproject}` });
-        console.log("Connected project:", values.selectedproject);
+
+        try {
+            const res = await API.post(
+                "/project/connect-project",
+                values,
+                { headers: { Authorization: `Bearer ${token}` } }
+            );
+
+            if (res.data.success) {
+                setToast({ success: true, message: res.data.message });
+                resetForm();
+                setTimeout(() => window.location.reload(), 2000);
+            } else {
+                setToast({ success: false, message: res.data.message });
+            }
+        } catch (err) {
+            const message =
+                err.response?.data?.message ||
+                "Request failed. Please try again.";
+
+            setToast({ success: false, message });
+        } finally {
+            setLoading(false);
+        }
     };
 
     return (
@@ -92,7 +115,7 @@ const GithubProjects = () => {
                 <div className="mt-4">
                     <DefaultButton
                         type="submit"
-                        label="Connect with Project"
+                        label={loading ? "Connecting..." : "Connect with Project"}
                         className="w-full"
                     />
                 </div>
