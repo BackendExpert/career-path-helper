@@ -21,6 +21,8 @@ import SystemLogs from '../pages/Dashboard/SystemLogs'
 import Account from '../pages/CommonDash/Settings/Account'
 import Repos from '../pages/CommonDash/Github/Repos'
 import Searchrepo from '../pages/CommonDash/Github/Searchrepo'
+import Projects from '../pages/CommonDash/Projects/Projects'
+import AIProject from '../pages/CommonDash/Projects/AIProject'
 
 function App() {
     return (
@@ -43,6 +45,8 @@ function App() {
                         <Route path='github/repos' element={<PrivateRoute roles={['admin', 'intern', 'undergraduate', 'ase', 'se']}><Repos /> </PrivateRoute>} />
                         <Route path='github/repo-search' element={<PrivateRoute roles={['admin', 'intern', 'undergraduate', 'ase', 'se']}><Searchrepo /> </PrivateRoute>} />
 
+                        <Route path='projects' element={<PrivateRoute roles={['admin', 'intern', 'undergraduate', 'ase', 'se']}><Projects /> </PrivateRoute>} />
+                        <Route path='projects/ai-review' element={<PrivateRoute roles={['admin', 'intern', 'undergraduate', 'ase', 'se']}><AIProject /> </PrivateRoute>} />
 
 
                         {/* admin */}
