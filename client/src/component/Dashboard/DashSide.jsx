@@ -19,29 +19,9 @@ import "./DashSide.css";
 const DashSide = ({ closeSidebar }) => {
     const { auth, logout } = useAuth();
     const navigate = useNavigate();
-    const [MyProfileImage, setMyProfileImage] = useState([]);
     const [collapsed, setCollapsed] = useState(false);
     const [openMenu, setOpenMenu] = useState(null);
     const token = localStorage.getItem("token");
-
-    useEffect(() => {
-        const fetchMyProfileImage = async () => {
-            try {
-                const res = await API.get(`/member/get-myprofileimage?nocache=${Date.now()}`, {
-                    headers: {
-                        Authorization: `Bearer ${token}`,
-                    },
-                });
-                setMyProfileImage(
-                    Array.isArray(res.data.result) ? res.data.result : [res.data.result]
-                );
-            } catch (err) {
-                console.error("Failed to fetch profile image:", err);
-                setMyProfileImage([]);
-            }
-        };
-        if (token) fetchMyProfileImage();
-    }, [token]);
 
     const toggleSubmenu = (index) => {
         setOpenMenu(openMenu === index ? null : index);
@@ -52,7 +32,7 @@ const DashSide = ({ closeSidebar }) => {
             name: "Dashboard",
             icon: <BiSolidDashboard />,
             link: "/dashboard",
-            roles: ["admin","undergraduate","intern","ase","se"],
+            roles: ["admin", "undergraduate", "intern", "ase", "se"],
         },
 
         {
@@ -62,7 +42,7 @@ const DashSide = ({ closeSidebar }) => {
                 { name: "My Projects", link: "/dashboard/projects" },
                 { name: "AI Project Review", link: "/dashboard/projects/ai-review" },
             ],
-            roles: ["admin","undergraduate","intern","ase","se"],
+            roles: ["admin", "undergraduate", "intern", "ase", "se"],
         },
 
         {
@@ -73,7 +53,7 @@ const DashSide = ({ closeSidebar }) => {
                 { name: "Missing Skills", link: "/dashboard/skills/missing" },
                 { name: "Skill Growth Plan", link: "/dashboard/skills/plan" },
             ],
-            roles: ["admin","undergraduate","intern","ase","se"],
+            roles: ["admin", "undergraduate", "intern", "ase", "se"],
         },
 
         {
@@ -84,7 +64,7 @@ const DashSide = ({ closeSidebar }) => {
                 { name: "Long-term Goal", link: "/dashboard/goals/long-term" },
                 { name: "Step-by-Step Roadmap", link: "/dashboard/goals/roadmap" },
             ],
-            roles: ["admin","undergraduate","intern","ase","se"],
+            roles: ["admin", "undergraduate", "intern", "ase", "se"],
         },
 
         {
@@ -93,7 +73,7 @@ const DashSide = ({ closeSidebar }) => {
             submenu: [
                 { name: "Ask Anything", link: "/dashboard/ai" },
             ],
-            roles: ["admin","undergraduate","intern","ase","se"],
+            roles: ["admin", "undergraduate", "intern", "ase", "se"],
         },
 
         {
@@ -104,7 +84,7 @@ const DashSide = ({ closeSidebar }) => {
                 { name: "Search Repo", link: "/dashboard/github/repo-search" },
                 { name: "Coding Patterns", link: "/dashboard/github/patterns" },
             ],
-            roles: ["admin","ase","se"],
+            roles: ["admin", "ase", "se"],
         },
 
         {
@@ -113,7 +93,7 @@ const DashSide = ({ closeSidebar }) => {
             submenu: [
                 { name: "Get Help from Seniors", link: "/dashboard/help/seniors" },
             ],
-            roles: ["admin","undergraduate","intern","ase","se"],
+            roles: ["admin", "undergraduate", "intern", "ase", "se"],
         },
 
         {
@@ -124,7 +104,7 @@ const DashSide = ({ closeSidebar }) => {
                 { name: "Project Report", link: "/dashboard/reports/projects" },
                 { name: "Progress Timeline", link: "/dashboard/reports/timeline" },
             ],
-            roles: ["admin","undergraduate","intern","ase","se"],
+            roles: ["admin", "undergraduate", "intern", "ase", "se"],
         },
 
         {
@@ -145,13 +125,33 @@ const DashSide = ({ closeSidebar }) => {
                 { name: "Account Settings", link: "/dashboard/settings/account" },
                 { name: "Security Settings", link: "/dashboard/settings/security" },
             ],
-            roles: ["admin","undergraduate","intern","ase","se"],
+            roles: ["admin", "undergraduate", "intern", "ase", "se"],
         },
     ];
 
     const filteredNavItems = navitem.filter((item) =>
         item.roles.includes(auth?.role)
     );
+
+    const [memberdata, setmemberdata] = useState([])
+
+    useEffect(() => {
+        const fetchmemberdata = async () => {
+            try {
+                const res = await API.get(`/member/get-member-data?nocache=${Date.now()}`, {
+                    headers: { Authorization: `Bearer ${token}` },
+                });
+
+                setmemberdata(res.data.result);
+            }
+            catch (err) {
+                console.log(err)
+            }
+        }
+
+        if (token) fetchmemberdata()
+    }, [token])
+
 
     return (
         <motion.aside
@@ -298,7 +298,11 @@ const DashSide = ({ closeSidebar }) => {
                     <div className="px-4 py-4 mt-4 border-t border-emerald-100 bg-gradient-to-r from-emerald-50 to-white">
                         <div className="flex items-center gap-3 mb-3">
                             <img
-                                src={MyProfileImage[0]?.url || defultImg}
+                                src={
+                                    memberdata?.profileimage
+                                        ? `${import.meta.env.VITE_APP_API_FILES}/uploads/${memberdata.profileimage}`
+                                        : defultImg
+                                }
                                 alt="User"
                                 className="w-10 h-10 rounded-full object-cover shadow-md"
                             />

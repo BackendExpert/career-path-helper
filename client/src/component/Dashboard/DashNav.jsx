@@ -16,7 +16,6 @@ const DashNav = () => {
     const { auth, logout } = useAuth();
     const [dropdownOpen, setDropdownOpen] = useState(false);
     const [showMobileSearch, setShowMobileSearch] = useState(false);
-    const [MyProfileImage, setMyProfileImage] = useState([]);
     const dropdownRef = useRef(null);
     const token = localStorage.getItem("token");
 
@@ -31,30 +30,24 @@ const DashNav = () => {
         return () => document.removeEventListener("mousedown", handleClickOutside);
     }, []);
 
-    // Fetch profile image
+    const [memberdata, setmemberdata] = useState([])
+
     useEffect(() => {
-        const fetchmyprofileimage = async () => {
+        const fetchmemberdata = async () => {
             try {
-                const res = await API.get(`/member/get-myprofileimage?nocache=${Date.now()}`, {
-                    headers: {
-                        Authorization: `Bearer ${token}`,
-                        "Cache-Control": "no-cache",
-                        Pragma: "no-cache",
-                        Expires: "0",
-                    },
+                const res = await API.get(`/member/get-member-data?nocache=${Date.now()}`, {
+                    headers: { Authorization: `Bearer ${token}` },
                 });
 
-                setMyProfileImage(
-                    Array.isArray(res.data.result)
-                        ? res.data.result
-                        : [res.data.result]
-                );
-            } catch {
-                setMyProfileImage([]);
+                setmemberdata(res.data.result);
             }
-        };
-        fetchmyprofileimage();
-    }, [token]);
+            catch (err) {
+                console.log(err)
+            }
+        }
+
+        if (token) fetchmemberdata()
+    }, [token])
 
     return (
         <>
@@ -119,8 +112,8 @@ const DashNav = () => {
                             >
                                 <img
                                     src={
-                                        MyProfileImage[0]?.profileimg
-                                            ? `${import.meta.env.VITE_APP_API_FILES}/uploads/${MyProfileImage[0].profileimg}`
+                                        memberdata?.profileimage
+                                            ? `${import.meta.env.VITE_APP_API_FILES}/uploads/${memberdata.profileimage}`
                                             : defultUser
                                     }
                                     alt="Profile"
@@ -142,8 +135,8 @@ const DashNav = () => {
                                         <div className="flex items-center gap-3 px-4 pb-3">
                                             <img
                                                 src={
-                                                    MyProfileImage[0]?.profileimg
-                                                        ? `${import.meta.env.VITE_APP_API_FILES}/uploads/${MyProfileImage[0].profileimg}`
+                                                    memberdata?.profileimage
+                                                        ? `${import.meta.env.VITE_APP_API_FILES}/uploads/${memberdata.profileimage}`
                                                         : defultUser
                                                 }
                                                 alt="User"
