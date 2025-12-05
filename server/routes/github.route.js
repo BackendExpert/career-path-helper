@@ -10,4 +10,6 @@ router.get('/github-repos', auth, GithubController.getallrepos)
 
 router.post('/search-repo', auth, GithubController.seachgithubrepos)
 
+router.post('/save-repo', auth, GithubController.saveRepo)
+
 module.exports = router;

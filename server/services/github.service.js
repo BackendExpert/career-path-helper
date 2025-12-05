@@ -5,7 +5,8 @@ const SavedRepos = require("../models/saverepo.model")
 const {
     GetUserGithubProfileResDTO,
     GetUserAllReposResDTO,
-    SearchRepoResDTO
+    SearchRepoResDTO,
+    SaveRepoResDTO
 } = require("../dtos/github.dto");
 
 const github = require("../utils/apis/github");
@@ -138,7 +139,7 @@ class GithubService {
         if (!getmemberdata) throw new Error("Member data not found");
 
         const checkrepo = await SavedRepos.findOne({ reponame: reponame })
-        if (!checkrepo) throw new Error("Repo Already Saved");
+        if (checkrepo) throw new Error("Repo Already Saved");
 
         const saverepo = new SavedRepos({
             user: user._id,

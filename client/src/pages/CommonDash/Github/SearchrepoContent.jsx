@@ -33,7 +33,7 @@ const SearchrepoContent = () => {
             ...(values.filtersdate && { filtersdate: values.filtersdate }),
             ...(values.filterenddate && { filterenddate: values.filterenddate }),
             page: 1,
-            per_page: 40, // 🔥 Only first 40 repos
+            per_page: 40,
         };
 
         try {
@@ -43,7 +43,7 @@ const SearchrepoContent = () => {
 
             if (res.data.success) {
                 const list = Array.isArray(res.data.result) ? res.data.result : [];
-                setFetchedRepos(list.slice(0, 40)); // 🔥 Ensure frontend limit 40
+                setFetchedRepos(list.slice(0, 40));
             } else {
                 setToast({ success: false, message: "Failed to fetch repositories" });
             }
@@ -75,14 +75,15 @@ const SearchrepoContent = () => {
     //     }
     // };
 
-    const handleSaveRepo = async (repo) => {
-        e.preventDefault();
-        setLoading(true);
-
+    const handleSaveRepo = async (reponame) => {
+        if (!reponame) {
+            setToast({ success: false, message: "Repository name is missing" });
+            return;
+        }
         try {
             const res = await API.post(
                 "/github/save-repo",
-                values,
+                { repo: reponame },
                 { headers: { Authorization: `Bearer ${token}` } }
             );
 
@@ -184,6 +185,7 @@ const SearchrepoContent = () => {
                                 )}
 
                                 <button
+                                    type="button"
                                     onClick={() => handleSaveRepo(repo.name)}
                                     className="px-4 py-2 bg-emerald-600 text-white rounded-lg hover:bg-emerald-700 transition"
                                 >
