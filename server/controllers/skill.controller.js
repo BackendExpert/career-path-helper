@@ -1,7 +1,8 @@
 const {
     ErrorResDTO,
     CreateSkillsDTO,
-    RemoveSkillDTO
+    RemoveSkillDTO,
+    GenarateSkillPlanDTO
 } = require("../dtos/skill.dto");
 const SkillService = require("../services/skill.service");
 
@@ -64,6 +65,30 @@ const SkillController = {
             )
 
             res.status(200).json(result)
+        }
+        catch (err) {
+            return res.status(400).json(ErrorResDTO(err.message));
+        }
+    },
+
+    genarateSkillPlan: async (req, res) => {
+        try {
+            const token = req.header("Authorization")?.replace("Bearer ", "");
+            if (!token) return res.status(401).json({ message: "Access denied" });
+
+            const {
+                aboutme
+            } = req.body
+
+            const dto = GenarateSkillPlanDTO(token, aboutme)
+
+            const result = SkillService.GenarateSkillPlan(
+                dto.token,
+                dto.aboutme,
+                req
+            )
+
+            res.status(200).json(result)            
         }
         catch (err) {
             return res.status(400).json(ErrorResDTO(err.message));
