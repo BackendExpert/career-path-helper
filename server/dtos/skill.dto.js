@@ -6,6 +6,9 @@ exports.GetAllSkillsResDTO = (result, message="All Skills are fetched") => ({ su
 exports.RemoveSkillDTO = (token, skillid) => ({ token, skillid })
 exports.RemoveSkillResDTO = (message="Skill Removed Successfully") => ({ success: true, message })
 
+exports.GenarateSkillPlanDTO = (token, aboutme) => ({ token, aboutme })
+exports.GenarateSkillPlanResDTP = (result, message="Skill Plan Genarated Successfull") => ({ success: true, result, message })
+
 exports.ErrorResDTO = (message = "Something went wrong") => ({
     success: false,
     message
