@@ -4,6 +4,8 @@ import DefaultInput from '../../../component/Form/DefaultInput';
 import DefaultButton from '../../../component/Buttons/DefaultButton';
 import Dropdown from '../../../component/Form/Dropdown';
 import API from '../../../services/api';
+import Toast from '../../../component/Toast/Toast';
+import AllSkills from './AllSkills';
 
 const Skills = () => {
     const token = localStorage.getItem("token");
@@ -26,7 +28,7 @@ const Skills = () => {
                 { headers: { Authorization: `Bearer ${token}` } }
             );
 
-            if (res.data.success) {
+            if (res.data.success === true) {
                 setToast({ success: true, message: res.data.message });
                 setTimeout(() => window.location.reload(), 2000);
             } else {
@@ -43,6 +45,15 @@ const Skills = () => {
 
     return (
         <div className="mr-4 space-y-10">
+            <div className="fixed top-12 right-6 z-50">
+                {toast && (
+                    <Toast
+                        success={toast.success}
+                        message={toast.message}
+                        onClose={() => setToast(null)}
+                    />
+                )}
+            </div>
             <div className="bg-white shadow-lg rounded-2xl p-4">
                 <form onSubmit={handleSubmit} method="post" className="space-y-6">
                     <div className="grid md:grid-cols-3 gap-6">
@@ -95,7 +106,7 @@ const Skills = () => {
 
             <div className="bg-white shadow-md rounded-2xl p-6">
                 <h1 className="text-2xl font-semibold text-gray-800 mb-2">All Skills</h1>
-                <p className="text-gray-500">List of all employee skills will appear here.</p>
+                <AllSkills />
             </div>
         </div>
     );

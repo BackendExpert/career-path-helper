@@ -19,7 +19,7 @@ const SkillController = {
 
             const dto = CreateSkillsDTO(token, skill, level, yearsofexp)
 
-            const result = await SkillService.createNewSkill(
+            const result = await SkillService.CreateSkill(
                 dto.token,
                 dto.skill,
                 dto.level,
@@ -53,11 +53,9 @@ const SkillController = {
             const token = req.header("Authorization")?.replace("Bearer ", "");
             if (!token) return res.status(401).json({ message: "Access denied" });
 
-            const {
-                skillid
-            } = req.params
+            const id = req.params.id
 
-            const dto = RemoveSkillDTO(token, skillid)
+            const dto = RemoveSkillDTO(token, id)
 
             const result = await SkillService.RemoveSkill(
                 dto.token,

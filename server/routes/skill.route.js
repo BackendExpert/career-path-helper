@@ -8,6 +8,6 @@ router.post('/create-skill', auth, SkillController.createNewSkill)
 
 router.get('/get-all-skills', auth, SkillController.getallskills)
 
-router.delete('/delete-skill', auth, SkillController.removeSkill)
+router.delete('/delete-skill/:id', auth, SkillController.removeSkill)
 
 module.exports = router;
