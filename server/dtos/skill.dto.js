@@ -7,7 +7,7 @@ exports.RemoveSkillDTO = (token, skillid) => ({ token, skillid })
 exports.RemoveSkillResDTO = (message="Skill Removed Successfully") => ({ success: true, message })
 
 exports.GenarateSkillPlanDTO = (token, aboutme) => ({ token, aboutme })
-exports.GenarateSkillPlanResDTP = (result, message="Skill Plan Genarated Successfull") => ({ success: true, result, message })
+exports.GenarateSkillPlanResDTO = (message="Skill Plan Genarated Successfull") => ({ success: true, message })
 
 exports.ErrorResDTO = (message = "Something went wrong") => ({
     success: false,

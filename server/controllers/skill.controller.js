@@ -82,7 +82,7 @@ const SkillController = {
 
             const dto = GenarateSkillPlanDTO(token, aboutme)
 
-            const result = SkillService.GenarateSkillPlan(
+            const result = await SkillService.GenarateSkillPlan(
                 dto.token,
                 dto.aboutme,
                 req

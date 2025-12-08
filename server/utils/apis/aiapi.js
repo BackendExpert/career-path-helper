@@ -5,7 +5,7 @@ function createGeminiClient(apiKey) {
         baseURL: 'https://generativelanguage.googleapis.com/v1beta',
         headers: { 'Content-Type': 'application/json' },
         params: { key: apiKey },
-        timeout: 10000,
+        timeout: 60000,
     });
 }
 

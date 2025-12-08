@@ -6,6 +6,10 @@ const SkillPlanSchema = new mongoose.Schema({
         ref: 'User',
         required: true
     },
+    promt: {
+        type: String,
+        required: true
+    },
     text: [
         {
             type: String,

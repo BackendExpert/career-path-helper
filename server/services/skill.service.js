@@ -1,6 +1,7 @@
 const User = require("../models/user.model")
 const Skill = require("../models/skill.model")
 const Member = require("../models/member.model")
+const SkillPlan = require("../models/skillplan.model");
 
 const jwt = require("jsonwebtoken")
 
@@ -11,8 +12,9 @@ const {
     CreateSkillsResDTO,
     GetAllSkillsResDTO,
     RemoveSkillResDTO,
-    GenarateSkillPlanResDTP
+    GenarateSkillPlanResDTO
 } = require("../dtos/skill.dto");
+
 
 
 class SkillService {
@@ -121,29 +123,36 @@ class SkillService {
 
         if (!member.aiapi) throw new Error("Member not Provided Gimini AI API, Please Provid your AI API");
 
+        const gemini = createGeminiClient(member.aiapi);
+
         const response = await gemini.post(
-            "/models/gemini-pro:generateContent",
+            "/models/gemini-2.5-flash:generateContent",
             {
-                contents: [{ parts: [{ text: aboutme }] }]
+                contents: [{ parts: [{ text: `${aboutme} give steps in step 1, step 2, etc` }] }]
             }
         );
+
+        // gemini.post(`/models/gemini-2.5-flash:generateContent`, {
+        //     prompt: aboutme
+        // });
 
         const rawText =
             response.data.candidates?.[0]?.content?.parts?.[0]?.text ||
             "No content generated";
 
-        console.log("🔹 Gemini Raw Output:");
-        console.log(rawText);
+        // console.log("🔹 Gemini Raw Output:");
+        // console.log(rawText);
 
         let steps = rawText
             .split(".")
             .map(s => s.trim())
             .filter(Boolean);
 
-        console.log("🔹 List Form:", steps);
+        // console.log("🔹 List Form:", steps);
 
-        const savedDocument = await GrowthItem.create({
+        const savedDocument = await SkillPlan.create({
             user: user._id,
+            promt: aboutme,
             text: steps
         });
 
@@ -157,9 +166,8 @@ class SkillService {
                 await logUserAction(req, "genarete_skill_plan", `${decoded.email} Successfully Genarated Skill Plan`, metadata, user._id);
             }
 
-            return GenarateSkillPlanResDTP()
+            return GenarateSkillPlanResDTO()
         }
-
     }
 }
 

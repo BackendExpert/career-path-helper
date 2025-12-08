@@ -24,7 +24,7 @@ const SkillGrowthPlan = () => {
 
         try {
             const res = await API.post(
-                "/skill/genarate-plan",
+                "/skill/genarate-skill-plan",
                 values,
                 { headers: { Authorization: `Bearer ${token}` } }
             );
@@ -60,6 +60,10 @@ const SkillGrowthPlan = () => {
                 <h1 className="text-xl font-semibold text-gray-500 py-4 pl-4">
                     Create Your Own unique Skill Growth Plan
                 </h1>
+                <p className="mb-4 text-gray-500">
+                    <span className='uppercase text-red-500 font-bold'>Important: </span>
+                    Please wait until your plan is generated. It may take some time depending on your input.
+                </p>
 
                 <form onSubmit={headleCreatePlan} method="post">
                     <div className="">
