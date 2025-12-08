@@ -24,6 +24,7 @@ import Searchrepo from '../pages/CommonDash/Github/Searchrepo'
 import Projects from '../pages/CommonDash/Projects/Projects'
 import AIProject from '../pages/CommonDash/Projects/AIProject'
 import Skills from '../pages/CommonDash/Skills/Skills'
+import SkillGrowthPlan from '../pages/CommonDash/Skills/SkillGrowthPlan'
 
 function App() {
     return (
@@ -50,6 +51,7 @@ function App() {
                         <Route path='projects/ai-review' element={<PrivateRoute roles={['admin', 'intern', 'undergraduate', 'ase', 'se']}><AIProject /> </PrivateRoute>} />
 
                         <Route path='skills' element={<PrivateRoute roles={['admin', 'intern', 'undergraduate', 'ase', 'se']}><Skills /> </PrivateRoute>} />
+                        <Route path='skills/plan' element={<PrivateRoute roles={['admin', 'intern', 'undergraduate', 'ase', 'se']}><SkillGrowthPlan /> </PrivateRoute>} />
 
 
                         {/* admin */}
