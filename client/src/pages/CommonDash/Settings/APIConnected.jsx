@@ -51,8 +51,8 @@ const APIConnected = () => {
             <div className="p-4 rounded-xl bg-gradient-to-r from-emerald-50 to-cyan-50 border border-emerald-200">
                 <span className="font-semibold text-emerald-600 uppercase">Important:</span>
                 <span className="ml-1 text-gray-700">
-                    Enter your <strong>ChatGPT API Key</strong>.
-                    Only ChatGPT API is supported now — Gemini support coming soon.
+                    Enter your <strong>Gemini API Key</strong>.
+                    Only Gemini API is supported now — Chatgpt support coming soon.
                 </span>
             </div>
 
