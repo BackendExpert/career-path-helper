@@ -14,4 +14,6 @@ router.post('/genarate-skill-plan', auth, SkillController.genarateSkillPlan)
 
 router.get('/get-skill-plans', auth, SkillController.getAllSkillPlans)
 
+router.get('/get-one-plan/:id', auth, SkillController.getplanbyid)
+
 module.exports = router;

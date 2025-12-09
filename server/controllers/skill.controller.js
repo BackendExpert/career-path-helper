@@ -106,6 +106,22 @@ const SkillController = {
         catch (err) {
             return res.status(400).json(ErrorResDTO(err.message));
         }
+    },
+
+    getplanbyid: async (req, res) => {
+        try {
+            const token = req.header("Authorization")?.replace("Bearer ", "");
+            if (!token) return res.status(401).json({ message: "Access denied" });
+
+            const id = req.params.id
+
+            const result = await SkillService.GetOneSkillPLan(token, id)
+
+            res.status(200).json(result)
+        }
+        catch (err) {
+            return res.status(400).json(ErrorResDTO(err.message));
+        }
     }
 };
 

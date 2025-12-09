@@ -13,7 +13,8 @@ const {
     GetAllSkillsResDTO,
     RemoveSkillResDTO,
     GenarateSkillPlanResDTO,
-    GetAllSkillPlansResDTO
+    GetAllSkillPlansResDTO,
+    GetOneSkillPlanResDTO
 } = require("../dtos/skill.dto");
 
 
@@ -201,6 +202,12 @@ class SkillService {
 
         const user = await User.findOne({ email: decoded.email });
         if (!user) throw new Error("User not found");
+
+        const getoneplan = await SkillPlan.findById(planid)
+
+        if(getoneplan.user !== user._id) throw new Error("You Cannot Access this plan");
+        
+        return GetOneSkillPlanResDTO(getoneplan)
     }
 }
 

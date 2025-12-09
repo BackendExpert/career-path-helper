@@ -7,6 +7,7 @@ import useForm from '../../../hooks/useForm';
 import DefaultInput from '../../../component/Form/DefaultInput';
 import TextAreaInput from '../../../component/Form/TextAreaInput';
 import DefaultButton from '../../../component/Buttons/DefaultButton';
+import AllPlans from './AllPlans';
 
 
 const SkillGrowthPlan = () => {
@@ -84,6 +85,10 @@ const SkillGrowthPlan = () => {
                         </div>
                     </div>
                 </form>
+            </div>
+
+            <div className="mt-4">
+                <AllPlans />
             </div>
         </div>
     )
