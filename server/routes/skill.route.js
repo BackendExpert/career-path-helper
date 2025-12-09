@@ -12,4 +12,6 @@ router.delete('/delete-skill/:id', auth, SkillController.removeSkill)
 
 router.post('/genarate-skill-plan', auth, SkillController.genarateSkillPlan)
 
+router.get('/get-skill-plans', auth, SkillController.getAllSkillPlans)
+
 module.exports = router;

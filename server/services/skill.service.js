@@ -12,7 +12,8 @@ const {
     CreateSkillsResDTO,
     GetAllSkillsResDTO,
     RemoveSkillResDTO,
-    GenarateSkillPlanResDTO
+    GenarateSkillPlanResDTO,
+    GetAllSkillPlansResDTO
 } = require("../dtos/skill.dto");
 
 
@@ -168,6 +169,38 @@ class SkillService {
 
             return GenarateSkillPlanResDTO()
         }
+    }
+
+    static async GetallSkillplans(token) {
+        let decoded;
+
+        try {
+            decoded = jwt.verify(token, process.env.JWT_SECRET);
+        } catch (err) {
+            if (err.name === "TokenExpiredError") throw new Error("Token expired");
+            throw new Error("Invalid token");
+        }
+
+        const user = await User.findOne({ email: decoded.email });
+        if (!user) throw new Error("User not found");
+
+        const findplans = await SkillPlan.find({ user: user._id })
+
+        return GetAllSkillPlansResDTO(findplans)
+    }
+
+    static async GetOneSkillPLan(token, planid) {
+        let decoded;
+
+        try {
+            decoded = jwt.verify(token, process.env.JWT_SECRET);
+        } catch (err) {
+            if (err.name === "TokenExpiredError") throw new Error("Token expired");
+            throw new Error("Invalid token");
+        }
+
+        const user = await User.findOne({ email: decoded.email });
+        if (!user) throw new Error("User not found");
     }
 }
 
