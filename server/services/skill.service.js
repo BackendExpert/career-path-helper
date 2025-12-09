@@ -1,0 +1,217 @@
+const User = require("../models/user.model")
+const Skill = require("../models/skill.model")
+const Member = require("../models/member.model")
+const SkillPlan = require("../models/skillplan.model");
+
+const jwt = require("jsonwebtoken")
+
+const logUserAction = require("../utils/others/logUserAction");
+const createGeminiClient = require("../utils/apis/aiapi")
+
+const {
+    CreateSkillsResDTO,
+    GetAllSkillsResDTO,
+    RemoveSkillResDTO,
+    GenarateSkillPlanResDTO,
+    GetAllSkillPlansResDTO,
+    GetOneSkillPlanResDTO
+} = require("../dtos/skill.dto");
+
+
+
+class SkillService {
+    static async CreateSkill(token, skill, level, years, req) {
+        let decoded;
+
+        try {
+            decoded = jwt.verify(token, process.env.JWT_SECRET);
+        } catch (err) {
+            if (err.name === "TokenExpiredError") throw new Error("Token expired");
+            throw new Error("Invalid token");
+        }
+
+        const user = await User.findOne({ email: decoded.email });
+        if (!user) throw new Error("User not found");
+
+        const checkskill = await Skill.findOne({ skill: skill })
+
+        if (checkskill) throw new Error("Skill Already Added");
+
+        const newSkill = new Skill({
+            user: user._id,
+            skill: skill,
+            level: level,
+            exp_years: years
+        })
+
+        const resultCreateSkill = newSkill.save()
+
+        if (resultCreateSkill) {
+            if (req) {
+                const metadata = {
+                    ipAddress: req.headers["x-forwarded-for"] || req.socket.remoteAddress,
+                    userAgent: req.headers["user-agent"],
+                    timestamp: new Date(),
+                };
+                await logUserAction(req, "Skill_added", `${decoded.email} Successfully added Skill`, metadata, user._id);
+            }
+
+            return CreateSkillsResDTO()
+        }
+    }
+
+    static async GetAllSkills(token) {
+        let decoded;
+
+        try {
+            decoded = jwt.verify(token, process.env.JWT_SECRET);
+        } catch (err) {
+            if (err.name === "TokenExpiredError") throw new Error("Token expired");
+            throw new Error("Invalid token");
+        }
+
+        const user = await User.findOne({ email: decoded.email });
+        if (!user) throw new Error("User not found");
+
+        const getallskills = await Skill.find({ user: user._id })
+
+        return GetAllSkillsResDTO(getallskills)
+    }
+
+    static async RemoveSkill(token, skillid, req) {
+        let decoded;
+
+        try {
+            decoded = jwt.verify(token, process.env.JWT_SECRET);
+        } catch (err) {
+            if (err.name === "TokenExpiredError") throw new Error("Token expired");
+            throw new Error("Invalid token");
+        }
+
+        const user = await User.findOne({ email: decoded.email });
+        if (!user) throw new Error("User not found");
+
+        const deleteskill = await Skill.findByIdAndDelete(skillid)
+
+        if (deleteskill) {
+            if (req) {
+                const metadata = {
+                    ipAddress: req.headers["x-forwarded-for"] || req.socket.remoteAddress,
+                    userAgent: req.headers["user-agent"],
+                    timestamp: new Date(),
+                };
+                await logUserAction(req, "Delete_skill", `${decoded.email} Successfully Deleted Skill`, metadata, user._id);
+            }
+
+            return RemoveSkillResDTO()
+        }
+    }
+
+    static async GenarateSkillPlan(token, aboutme, req) {
+        let decoded;
+
+        try {
+            decoded = jwt.verify(token, process.env.JWT_SECRET);
+        } catch (err) {
+            if (err.name === "TokenExpiredError") throw new Error("Token expired");
+            throw new Error("Invalid token");
+        }
+
+        const user = await User.findOne({ email: decoded.email });
+        if (!user) throw new Error("User not found");
+
+        const member = await Member.findOne({ user: user._id });
+        if (!member) throw new Error("Member not found");
+
+        if (!member.aiapi) throw new Error("Member not Provided Gimini AI API, Please Provid your AI API");
+
+        const gemini = createGeminiClient(member.aiapi);
+
+        const response = await gemini.post(
+            "/models/gemini-2.5-flash:generateContent",
+            {
+                contents: [{ parts: [{ text: `${aboutme} give steps in step 1, step 2, etc` }] }]
+            }
+        );
+
+        // gemini.post(`/models/gemini-2.5-flash:generateContent`, {
+        //     prompt: aboutme
+        // });
+
+        const rawText =
+            response.data.candidates?.[0]?.content?.parts?.[0]?.text ||
+            "No content generated";
+
+        // console.log("🔹 Gemini Raw Output:");
+        // console.log(rawText);
+
+        let steps = rawText
+            .split(".")
+            .map(s => s.trim())
+            .filter(Boolean);
+
+        // console.log("🔹 List Form:", steps);
+
+        const savedDocument = await SkillPlan.create({
+            user: user._id,
+            promt: aboutme,
+            text: steps
+        });
+
+        if (savedDocument) {
+            if (req) {
+                const metadata = {
+                    ipAddress: req.headers["x-forwarded-for"] || req.socket.remoteAddress,
+                    userAgent: req.headers["user-agent"],
+                    timestamp: new Date(),
+                };
+                await logUserAction(req, "genarete_skill_plan", `${decoded.email} Successfully Genarated Skill Plan`, metadata, user._id);
+            }
+
+            return GenarateSkillPlanResDTO()
+        }
+    }
+
+    static async GetallSkillplans(token) {
+        let decoded;
+
+        try {
+            decoded = jwt.verify(token, process.env.JWT_SECRET);
+        } catch (err) {
+            if (err.name === "TokenExpiredError") throw new Error("Token expired");
+            throw new Error("Invalid token");
+        }
+
+        const user = await User.findOne({ email: decoded.email });
+        if (!user) throw new Error("User not found");
+
+        const findplans = await SkillPlan.find({ user: user._id })
+
+        return GetAllSkillPlansResDTO(findplans)
+    }
+
+    static async GetOneSkillPLan(token, planid) {
+        let decoded;
+
+        try {
+            decoded = jwt.verify(token, process.env.JWT_SECRET);
+        } catch (err) {
+            if (err.name === "TokenExpiredError") throw new Error("Token expired");
+            throw new Error("Invalid token");
+        }
+
+        const user = await User.findOne({ email: decoded.email });
+        if (!user) throw new Error("User not found");
+
+        const getoneplan = await SkillPlan.findById(planid)
+
+        // if(getoneplan.user !== user._id) throw new Error("You Cannot Access this plan");
+
+        if (String(getoneplan.user) !== String(user._id)) {
+            throw new Error("You Cannot Access this plan");
+        }
+        return GetOneSkillPlanResDTO(getoneplan)
+    }
+}
+
+module.exports = SkillService

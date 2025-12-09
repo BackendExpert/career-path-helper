@@ -49,20 +49,17 @@ const DashSide = ({ closeSidebar }) => {
             name: "Skills",
             icon: <FaTools />,
             submenu: [
-                { name: "Current Skills", link: "/dashboard/skills" },
-                { name: "Missing Skills", link: "/dashboard/skills/missing" },
+                { name: "Skills", link: "/dashboard/skills" },
                 { name: "Skill Growth Plan", link: "/dashboard/skills/plan" },
             ],
             roles: ["admin", "undergraduate", "intern", "ase", "se"],
         },
 
         {
-            name: "Goals",
+            name: "Roadmap",
             icon: <FaBullseye />,
             submenu: [
-                { name: "Nearest Goal", link: "/dashboard/goals/nearest" },
-                { name: "Long-term Goal", link: "/dashboard/goals/long-term" },
-                { name: "Step-by-Step Roadmap", link: "/dashboard/goals/roadmap" },
+                { name: "Step-by-Step Roadmap", link: "/dashboard/roadmap/roadmap" },
             ],
             roles: ["admin", "undergraduate", "intern", "ase", "se"],
         },
