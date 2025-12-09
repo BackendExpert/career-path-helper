@@ -205,8 +205,11 @@ class SkillService {
 
         const getoneplan = await SkillPlan.findById(planid)
 
-        if(getoneplan.user !== user._id) throw new Error("You Cannot Access this plan");
-        
+        // if(getoneplan.user !== user._id) throw new Error("You Cannot Access this plan");
+
+        if (String(getoneplan.user) !== String(user._id)) {
+            throw new Error("You Cannot Access this plan");
+        }
         return GetOneSkillPlanResDTO(getoneplan)
     }
 }
