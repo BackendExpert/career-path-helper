@@ -115,12 +115,12 @@ const Articles = () => {
                             Articles are fetched from <a href="https://developers.forem.com/api" target="_blank" className="text-cyan-600 underline hover:text-cyan-800">dev.to API</a>.
                         </p>
                     </div>
-                    <div className="flex items-start gap-3">
+                    {/* <div className="flex items-start gap-3">
                         <FaCheck className="text-cyan-500 mt-1" />
                         <p className="text-gray-700 text-sm md:text-base">
                             Currently, only the latest 250 articles are available in this release. Future updates will include more articles.
                         </p>
-                    </div>
+                    </div> */}
                     <div className="flex items-start gap-3">
                         <FaCheck className="text-cyan-500 mt-1" />
                         <p className="text-gray-700 text-sm md:text-base">
