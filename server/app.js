@@ -24,6 +24,7 @@ const memberRoute = require("./routes/member.route")
 const githubRoute = require("./routes/github.route")
 const projectRoute = require("./routes/project.route")
 const skillRoute = require("./routes/skill.route")
+const articleRoute = require("./routes/article.route")
 
 
 // ---------------------- END of Importing Routes
@@ -119,6 +120,7 @@ app.use('/api/member', memberRoute)
 app.use('/api/github', githubRoute)
 app.use('/api/project', projectRoute)
 app.use('/api/skill', skillRoute)
+app.use('/api/article', articleRoute)
 
 // -------------- END routes-----------------------
 
