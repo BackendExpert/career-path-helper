@@ -20,7 +20,7 @@ class ArticleService {
         //     }
         // });
         const res = await axios.get('https://dev.to/api/articles', {
-            params: { per_page: 5 }
+            params: { per_page: 20 }
         });
 
         return GetTopArticlesResDTO(res.data)
