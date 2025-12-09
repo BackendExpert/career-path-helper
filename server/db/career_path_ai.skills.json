@@ -1,0 +1,144 @@
+[{
+  "_id": {
+    "$oid": "69364512c8087755ac341441"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "skill": "Javascript",
+  "level": "Expert",
+  "exp_years": 4,
+  "createdAt": {
+    "$date": "2025-12-08T03:25:06.681Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-08T03:25:06.681Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6936451cc8087755ac34146a"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "skill": "PHP",
+  "level": "Intermediate",
+  "exp_years": 5,
+  "createdAt": {
+    "$date": "2025-12-08T03:25:16.328Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-08T03:25:16.328Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6936452ac8087755ac341493"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "skill": "MySQL",
+  "level": "Intermediate",
+  "exp_years": 4,
+  "createdAt": {
+    "$date": "2025-12-08T03:25:30.500Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-08T03:25:30.500Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69364535c8087755ac3414bc"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "skill": "Mongodb",
+  "level": "Intermediate",
+  "exp_years": 4,
+  "createdAt": {
+    "$date": "2025-12-08T03:25:41.183Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-08T03:25:41.183Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69364541c8087755ac3414e5"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "skill": "NodeJS",
+  "level": "Intermediate",
+  "exp_years": 4,
+  "createdAt": {
+    "$date": "2025-12-08T03:25:53.347Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-08T03:25:53.347Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6936454cc8087755ac34150e"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "skill": "ReactJS",
+  "level": "Intermediate",
+  "exp_years": 4,
+  "createdAt": {
+    "$date": "2025-12-08T03:26:04.626Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-08T03:26:04.626Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6936455bc8087755ac341537"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "skill": "VPS Hosting",
+  "level": "Intermediate",
+  "exp_years": 1,
+  "createdAt": {
+    "$date": "2025-12-08T03:26:19.787Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-08T03:26:19.787Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69364568c8087755ac341560"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "skill": "DevOps",
+  "level": "Beginner",
+  "exp_years": 1,
+  "createdAt": {
+    "$date": "2025-12-08T03:26:32.739Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-08T03:26:32.739Z"
+  },
+  "__v": 0
+}]

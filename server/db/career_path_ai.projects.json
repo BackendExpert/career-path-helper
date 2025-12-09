@@ -1,0 +1,32 @@
+[{
+  "_id": {
+    "$oid": "693270572ce239430630baac"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "project_name": "career-path-helper",
+  "createdAt": {
+    "$date": "2025-12-05T05:40:39.717Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T05:40:39.717Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "693270a42ce239430630bab8"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "project_name": "health-care",
+  "createdAt": {
+    "$date": "2025-12-05T05:41:56.899Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T05:41:56.899Z"
+  },
+  "__v": 0
+}]
