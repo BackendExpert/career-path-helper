@@ -11,10 +11,11 @@ import {
     BiBarChartSquare,
 } from "react-icons/bi";
 import { FaCog, FaUser, FaFolderOpen, FaTools, FaBullseye, FaRobot, FaGithub, FaHandsHelping, FaUsersCog } from "react-icons/fa";
-import { MdLogout } from "react-icons/md";
+import { MdLogout, MdArticle } from "react-icons/md";
 import { motion } from "framer-motion";
 import { ChevronDown, ChevronRight } from "lucide-react";
 import "./DashSide.css";
+
 
 const DashSide = ({ closeSidebar }) => {
     const { auth, logout } = useAuth();
@@ -60,6 +61,16 @@ const DashSide = ({ closeSidebar }) => {
             icon: <FaBullseye />,
             submenu: [
                 { name: "Step-by-Step Roadmap", link: "/dashboard/roadmap/roadmap" },
+            ],
+            roles: ["admin", "undergraduate", "intern", "ase", "se"],
+        },
+
+        {
+            name: "Articles",
+            icon: <MdArticle />,
+            submenu: [
+                { name: "Articles", link: "/dashboard/articles" },
+                { name: "Saved Articles", link: "/dashboard/articles/saved" },
             ],
             roles: ["admin", "undergraduate", "intern", "ase", "se"],
         },

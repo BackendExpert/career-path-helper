@@ -11,9 +11,6 @@ import Dashboard from '../layouts/Dashboard'
 import DashError from '../component/Errors/DashError'
 import PrivateRoute from './PrivateRoute'
 import DashHome from '../pages/Dashboard/DashHome'
-import DevDashboard from '../layouts/DevDashboard'
-import DevHome from '../pages/DevDashboard/DevHome'
-import HomePage from '../pages/HomePage/HomePage'
 import User from '../pages/Dashboard/Users/User'
 import Levels from '../pages/Dashboard/Users/Levels'
 import ViewRole from '../pages/Dashboard/Users/ViewRole'
@@ -26,6 +23,8 @@ import AIProject from '../pages/CommonDash/Projects/AIProject'
 import Skills from '../pages/CommonDash/Skills/Skills'
 import SkillGrowthPlan from '../pages/CommonDash/Skills/SkillGrowthPlan'
 import SkillPlan from '../pages/CommonDash/Skills/SkillPlan'
+import Articals from '../pages/CommonDash/Articals/Articals'
+import SavedArticle from '../pages/CommonDash/Articals/SavedArticle'
 
 function App() {
     return (
@@ -54,6 +53,10 @@ function App() {
                         <Route path='skills' element={<PrivateRoute roles={['admin', 'intern', 'undergraduate', 'ase', 'se']}><Skills /> </PrivateRoute>} />
                         <Route path='skills/plan' element={<PrivateRoute roles={['admin', 'intern', 'undergraduate', 'ase', 'se']}><SkillGrowthPlan /> </PrivateRoute>} />
                         <Route path='skills/plan/:id' element={<PrivateRoute roles={['admin', 'intern', 'undergraduate', 'ase', 'se']}><SkillPlan /> </PrivateRoute>} />
+                        
+
+                        <Route path='articles' element={<PrivateRoute roles={['admin', 'intern', 'undergraduate', 'ase', 'se']}><Articals /> </PrivateRoute>} />
+                        <Route path='articles/saved' element={<PrivateRoute roles={['admin', 'intern', 'undergraduate', 'ase', 'se']}><SavedArticle /> </PrivateRoute>} />
 
 
                         {/* admin */}

@@ -1,0 +1,94 @@
+[{
+  "_id": {
+    "$oid": "6930d32e501fdb185349ad32"
+  },
+  "user": {
+    "$oid": "692c2d8f991089a6d7e2cf52"
+  },
+  "fname": "apptest",
+  "lname": "jehan",
+  "mobile": "0711758851",
+  "gender": "male",
+  "currentjob": "Developer",
+  "shortbio": "Intern with few month Exp",
+  "github": "",
+  "linkedin": "",
+  "twitter": "",
+  "fb": "",
+  "website": "",
+  "education": [],
+  "exp": [],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6930d70924870d7271c92b22"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "fname": "Jehan",
+  "lname": "Kandy",
+  "mobile": "0711758851",
+  "gender": "male",
+  "currentjob": "Fullstack Developer",
+  "shortbio": "5+ years of experience with 2+ years of experience hand-on",
+  "profileimage": "1764808707618.jpg",
+  "github": "BackendExpert",
+  "linkedin": "https://www.linkedin.com/in/jehanweerasuriya/",
+  "twitter": "",
+  "fb": "https://www.facebook.com/kandy.jehan/",
+  "website": "",
+  "education": [
+    {
+      "school": "SIBA",
+      "course": "BscIT",
+      "startat": {
+        "$date": "2021-10-01T00:00:00.000Z"
+      },
+      "endat": {
+        "$date": "2025-11-19T00:00:00.000Z"
+      },
+      "_id": {
+        "$oid": "6930d76a24870d7271c92b5e"
+      }
+    },
+    {
+      "school": "University of Staffordshire",
+      "course": "MSc SE",
+      "startat": {
+        "$date": "2025-11-14T00:00:00.000Z"
+      },
+      "_id": {
+        "$oid": "69317653d2535ade7ea72207"
+      }
+    }
+  ],
+  "exp": [
+    {
+      "workplace": "BlackAlphaLabs",
+      "job": "Founder and CEO",
+      "startat": {
+        "$date": "2024-11-01T00:00:00.000Z"
+      },
+      "_id": {
+        "$oid": "6930d73124870d7271c92b3b"
+      }
+    },
+    {
+      "workplace": "Universicity of Pera",
+      "job": "Fullstack Developer",
+      "startat": {
+        "$date": "2024-11-01T00:00:00.000Z"
+      },
+      "endat": {
+        "$date": "2026-02-05T00:00:00.000Z"
+      },
+      "_id": {
+        "$oid": "6930d75924870d7271c92b4b"
+      }
+    }
+  ],
+  "__v": 4,
+  "aiapi": "AIzaSyDjf6fBmVKi3Mfk61Px43mmVK67bMnArS4"
+}]

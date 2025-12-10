@@ -1,40 +1,40 @@
 [{
   "_id": {
-    "$oid": "6912a59764e56a521de8f029"
+    "$oid": "692bd6089bba2ad29521d330"
   },
   "username": "jehan",
   "email": "jehanapptest@gmail.com",
-  "password": "$2b$10$1qCGfE3SiUZHlm0c5ceApeBbPNWGwaImPZDnRH3RLXYAHusLwK1uG",
+  "password": "$2b$10$2JJq1WNz3a415Szp7aTvXOqAM4fd0JasX2smdkJ2BUChgHZJb/jGO",
   "role": {
     "$oid": "6837b60b735077d2866f126b"
   },
   "isActive": true,
   "isEmailVerified": true,
   "createdAt": {
-    "$date": "2025-11-11T02:55:19.940Z"
+    "$date": "2025-11-30T05:28:40.843Z"
   },
   "updatedAt": {
-    "$date": "2025-11-11T03:24:42.761Z"
+    "$date": "2025-11-30T05:33:05.338Z"
   },
   "__v": 0
 },
 {
   "_id": {
-    "$oid": "6913480d16d451b425b840d2"
+    "$oid": "692c2d8f991089a6d7e2cf52"
   },
   "username": "intern",
   "email": "jkandymusic@gmail.com",
-  "password": "$2b$10$8ZaOQvVV5hk4mMTR.ykXbuXIFblNNVhT5PQyXW8JVK2H4BDk3MVtG",
+  "password": "$2b$10$uVCu8z1SmG9R.jmFjlVtdOnIzMdbaQdT2piaTTqPqSdTVFJMtEiAW",
   "role": {
-    "$oid": "6843973fea08c312b1a7d4cb"
+    "$oid": "6837b616735077d2866f126e"
   },
   "isActive": true,
   "isEmailVerified": true,
   "createdAt": {
-    "$date": "2025-11-11T14:28:29.340Z"
+    "$date": "2025-11-30T11:42:07.825Z"
   },
   "updatedAt": {
-    "$date": "2025-11-11T14:28:51.089Z"
+    "$date": "2025-12-01T04:25:18.268Z"
   },
   "__v": 0
 }]

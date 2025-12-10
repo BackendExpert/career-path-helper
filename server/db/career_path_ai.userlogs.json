@@ -1,0 +1,4082 @@
+[{
+  "_id": {
+    "$oid": "692bd219ce62b602c3ebab11"
+  },
+  "user": {
+    "$oid": "692bd219ce62b602c3ebab0f"
+  },
+  "action": "register",
+  "description": "jehanapptest@gmail.com registered",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": {
+      "$date": "2025-11-30T05:11:53.720Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-11-30T05:11:53.741Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-30T05:11:53.741Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "692bd359ce62b602c3ebab1a"
+  },
+  "user": {
+    "$oid": "692bd359ce62b602c3ebab18"
+  },
+  "action": "register",
+  "description": "jehanapptest@gmail.com registered",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": {
+      "$date": "2025-11-30T05:17:13.218Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-11-30T05:17:13.219Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-30T05:17:13.219Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "692bd39fce62b602c3ebab23"
+  },
+  "user": {
+    "$oid": "692bd39fce62b602c3ebab21"
+  },
+  "action": "register",
+  "description": "jehanapptest@gmail.com registered",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": {
+      "$date": "2025-11-30T05:18:23.326Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-11-30T05:18:23.326Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-30T05:18:23.326Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "692bd59ece62b602c3ebab2d"
+  },
+  "user": {
+    "$oid": "692bd59ece62b602c3ebab2b"
+  },
+  "action": "register",
+  "description": "jehanapptest@gmail.com registered",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": {
+      "$date": "2025-11-30T05:26:54.095Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-11-30T05:26:54.095Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-30T05:26:54.095Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "692bd6089bba2ad29521d332"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "register",
+  "description": "jehanapptest@gmail.com registered",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": {
+      "$date": "2025-11-30T05:28:40.848Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-11-30T05:28:40.850Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-30T05:28:40.850Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "692bd66b9bba2ad29521d33b"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "account_verify",
+  "description": "jehanapptest@gmail.com Accout Verified",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": {
+      "$date": "2025-11-30T05:30:19.420Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-11-30T05:30:19.421Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-30T05:30:19.421Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "692bd67b9bba2ad29521d33f"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "login_success",
+  "description": "jehanapptest@gmail.com Login Success",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": "11/30/2025, 11:00:35 AM"
+  },
+  "createdAt": {
+    "$date": "2025-11-30T05:30:35.816Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-30T05:30:35.816Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "692bd7089bba2ad29521d348"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "OTP_verify_success",
+  "description": "jehanapptest@gmail.com OTP Verification Success",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": {
+      "$date": "2025-11-30T05:32:56.654Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-11-30T05:32:56.654Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-30T05:32:56.654Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "692bd7119bba2ad29521d34c"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "password_Updated",
+  "description": "jehanapptest@gmail.com Password Updated Success",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": {
+      "$date": "2025-11-30T05:33:05.340Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-11-30T05:33:05.340Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-30T05:33:05.340Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "692bd75c9bba2ad29521d34f"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "wrong_password",
+  "description": "jehanapptest@gmail.com login failed",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": {
+      "$date": "2025-11-30T05:34:20.574Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-11-30T05:34:20.575Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-30T05:34:20.575Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "692bd7629bba2ad29521d353"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "login_success",
+  "description": "jehanapptest@gmail.com Login Success",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": "11/30/2025, 11:04:26 AM"
+  },
+  "createdAt": {
+    "$date": "2025-11-30T05:34:26.833Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-30T05:34:26.833Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "692be8389bba2ad29521d357"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "login_success",
+  "description": "jehanapptest@gmail.com Login Success",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": "11/30/2025, 12:16:16 PM"
+  },
+  "createdAt": {
+    "$date": "2025-11-30T06:46:16.193Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-30T06:46:16.193Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "692be83a9bba2ad29521d35b"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "login_success",
+  "description": "jehanapptest@gmail.com Login Success",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": "11/30/2025, 12:16:18 PM"
+  },
+  "createdAt": {
+    "$date": "2025-11-30T06:46:18.913Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-30T06:46:18.913Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "692bedb59bba2ad29521d35e"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "wrong_password",
+  "description": "jehanapptest@gmail.com login failed",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": {
+      "$date": "2025-11-30T07:09:41.491Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-11-30T07:09:41.491Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-30T07:09:41.491Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "692bedba9bba2ad29521d361"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "wrong_password",
+  "description": "jehanapptest@gmail.com login failed",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": {
+      "$date": "2025-11-30T07:09:46.167Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-11-30T07:09:46.168Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-30T07:09:46.168Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "692bedbf9bba2ad29521d365"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "login_success",
+  "description": "jehanapptest@gmail.com Login Success",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": "11/30/2025, 12:39:51 PM"
+  },
+  "createdAt": {
+    "$date": "2025-11-30T07:09:51.126Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-30T07:09:51.126Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "692c2bd1991089a6d7e2cf4a"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "wrong_password",
+  "description": "jehanapptest@gmail.com login failed",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": {
+      "$date": "2025-11-30T11:34:41.239Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-11-30T11:34:41.247Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-30T11:34:41.247Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "692c2bd4991089a6d7e2cf4e"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "login_success",
+  "description": "jehanapptest@gmail.com Login Success",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": "11/30/2025, 5:04:44 PM"
+  },
+  "createdAt": {
+    "$date": "2025-11-30T11:34:44.525Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-30T11:34:44.525Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "692c2d8f991089a6d7e2cf54"
+  },
+  "user": {
+    "$oid": "692c2d8f991089a6d7e2cf52"
+  },
+  "action": "register",
+  "description": "jkandymusic@gmail.com registered",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": {
+      "$date": "2025-11-30T11:42:07.827Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-11-30T11:42:07.828Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-30T11:42:07.828Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "692c2d9d991089a6d7e2cf5d"
+  },
+  "user": {
+    "$oid": "692c2d8f991089a6d7e2cf52"
+  },
+  "action": "account_verify",
+  "description": "jkandymusic@gmail.com Accout Verified",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": {
+      "$date": "2025-11-30T11:42:21.250Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-11-30T11:42:21.250Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-30T11:42:21.250Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "692c2da5991089a6d7e2cf61"
+  },
+  "user": {
+    "$oid": "692c2d8f991089a6d7e2cf52"
+  },
+  "action": "login_success",
+  "description": "jkandymusic@gmail.com Login Success",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": "11/30/2025, 5:12:29 PM"
+  },
+  "createdAt": {
+    "$date": "2025-11-30T11:42:29.946Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-30T11:42:29.946Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "692c2f42991089a6d7e2cf65"
+  },
+  "user": {
+    "$oid": "692c2d8f991089a6d7e2cf52"
+  },
+  "action": "login_success",
+  "description": "jkandymusic@gmail.com Login Success",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": "11/30/2025, 5:19:22 PM"
+  },
+  "createdAt": {
+    "$date": "2025-11-30T11:49:22.264Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-30T11:49:22.264Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "692c2fcc991089a6d7e2cf69"
+  },
+  "user": {
+    "$oid": "692c2d8f991089a6d7e2cf52"
+  },
+  "action": "login_success",
+  "description": "jkandymusic@gmail.com Login Success",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": "11/30/2025, 5:21:40 PM"
+  },
+  "createdAt": {
+    "$date": "2025-11-30T11:51:40.509Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-30T11:51:40.509Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "692c5da34c4286b2ab40f411"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "login_success",
+  "description": "jehanapptest@gmail.com Login Success",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": "11/30/2025, 8:37:15 PM"
+  },
+  "createdAt": {
+    "$date": "2025-11-30T15:07:15.792Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-30T15:07:15.792Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "692d09f8302bc0ee15744a9c"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "login_success",
+  "description": "jehanapptest@gmail.com Login Success",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": "12/1/2025, 8:52:32 AM"
+  },
+  "createdAt": {
+    "$date": "2025-12-01T03:22:32.316Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-01T03:22:32.316Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "692d1897302bc0ee15744b82"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "user_role_updated",
+  "description": "jehanapptest@gmail.com successfully updated 692c2d8f991089a6d7e2cf52 role",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": {
+      "$date": "2025-12-01T04:24:55.162Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-01T04:24:55.163Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-01T04:24:55.163Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "692d18a0302bc0ee15744b94"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "user_role_updated",
+  "description": "jehanapptest@gmail.com successfully updated 692c2d8f991089a6d7e2cf52 role",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": {
+      "$date": "2025-12-01T04:25:04.710Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-01T04:25:04.711Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-01T04:25:04.711Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "692d18a7302bc0ee15744ba6"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "user_role_updated",
+  "description": "jehanapptest@gmail.com successfully updated 692c2d8f991089a6d7e2cf52 role",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": {
+      "$date": "2025-12-01T04:25:11.060Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-01T04:25:11.061Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-01T04:25:11.061Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "692d18ae302bc0ee15744bb8"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "user_role_updated",
+  "description": "jehanapptest@gmail.com successfully updated 692c2d8f991089a6d7e2cf52 role",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": {
+      "$date": "2025-12-01T04:25:18.269Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-01T04:25:18.270Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-01T04:25:18.270Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "692d21e0302bc0ee15744cb5"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "new_permission_create",
+  "description": "jehanapptest@gmail.com new Permission Created for intern",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": {
+      "$date": "2025-12-01T05:04:32.072Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-01T05:04:32.073Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-01T05:04:32.073Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "692d23bc302bc0ee15744cd8"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "new_permission_create",
+  "description": "jehanapptest@gmail.com new Permission Created for intern",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": {
+      "$date": "2025-12-01T05:12:28.920Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-01T05:12:28.921Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-01T05:12:28.921Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "692d26a2302bc0ee15744d05"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "delete_permission",
+  "description": "jehanapptest@gmail.com successfully deleted permission user:create11",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": {
+      "$date": "2025-12-01T05:24:50.270Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-01T05:24:50.271Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-01T05:24:50.271Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "692d26a8302bc0ee15744d11"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "delete_permission",
+  "description": "jehanapptest@gmail.com successfully deleted permission user:create",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": {
+      "$date": "2025-12-01T05:24:56.764Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-01T05:24:56.765Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-01T05:24:56.765Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "692d2cd9302bc0ee15744da5"
+  },
+  "user": {
+    "$oid": "692c2d8f991089a6d7e2cf52"
+  },
+  "action": "login_success",
+  "description": "jkandymusic@gmail.com Login Success",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": "12/1/2025, 11:21:21 AM"
+  },
+  "createdAt": {
+    "$date": "2025-12-01T05:51:21.099Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-01T05:51:21.099Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "692f09f24c44c35b9afdd247"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "login_success",
+  "description": "jehanapptest@gmail.com Login Success",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": "12/2/2025, 9:16:58 PM"
+  },
+  "createdAt": {
+    "$date": "2025-12-02T15:46:58.607Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-02T15:46:58.607Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "692f16a94c44c35b9afdd270"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "wrong_password",
+  "description": "jehanapptest@gmail.com login failed",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": {
+      "$date": "2025-12-02T16:41:13.595Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-02T16:41:13.596Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-02T16:41:13.596Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "692f16ae4c44c35b9afdd274"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "login_success",
+  "description": "jehanapptest@gmail.com Login Success",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": "12/2/2025, 10:11:18 PM"
+  },
+  "createdAt": {
+    "$date": "2025-12-02T16:41:18.323Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-02T16:41:18.323Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "692f173d4c44c35b9afdd278"
+  },
+  "user": {
+    "$oid": "692c2d8f991089a6d7e2cf52"
+  },
+  "action": "login_success",
+  "description": "jkandymusic@gmail.com Login Success",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": "12/2/2025, 10:13:41 PM"
+  },
+  "createdAt": {
+    "$date": "2025-12-02T16:43:41.221Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-02T16:43:41.221Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "692f99bb4c44c35b9afdd296"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "login_success",
+  "description": "jehanapptest@gmail.com Login Success",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": "12/3/2025, 7:30:27 AM"
+  },
+  "createdAt": {
+    "$date": "2025-12-03T02:00:28.443Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-03T02:00:28.443Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "693028702578c16b739aedaf"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "login_success",
+  "description": "jehanapptest@gmail.com Login Success",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": "12/3/2025, 5:39:20 PM"
+  },
+  "createdAt": {
+    "$date": "2025-12-03T12:09:20.406Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-03T12:09:20.406Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69303b53008d53ba52f4942a"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "Update Personal Data",
+  "description": "jehanapptest@gmail.com updated personal data",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "PostmanRuntime/7.49.1",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "PostmanRuntime/7.49.1",
+    "timestamp": {
+      "$date": "2025-12-03T13:29:55.775Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-03T13:29:55.777Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-03T13:29:55.777Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69303b56008d53ba52f49430"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "Update Personal Data",
+  "description": "jehanapptest@gmail.com updated personal data",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "PostmanRuntime/7.49.1",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "PostmanRuntime/7.49.1",
+    "timestamp": {
+      "$date": "2025-12-03T13:29:58.671Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-03T13:29:58.672Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-03T13:29:58.672Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69303bc1008d53ba52f49437"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "Update Personal Data",
+  "description": "jehanapptest@gmail.com updated personal data",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "PostmanRuntime/7.49.1",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "PostmanRuntime/7.49.1",
+    "timestamp": {
+      "$date": "2025-12-03T13:31:45.833Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-03T13:31:45.834Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-03T13:31:45.834Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69303bf7008d53ba52f4943d"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "Update Personal Data",
+  "description": "jehanapptest@gmail.com updated personal data",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "PostmanRuntime/7.49.1",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "PostmanRuntime/7.49.1",
+    "timestamp": {
+      "$date": "2025-12-03T13:32:39.021Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-03T13:32:39.021Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-03T13:32:39.021Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69303c43008d53ba52f49443"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "Update Personal Data",
+  "description": "jehanapptest@gmail.com updated personal data",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "PostmanRuntime/7.49.1",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "PostmanRuntime/7.49.1",
+    "timestamp": {
+      "$date": "2025-12-03T13:33:55.583Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-03T13:33:55.584Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-03T13:33:55.584Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69303c91ef1e323d79977380"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "Update Personal Data",
+  "description": "jehanapptest@gmail.com updated personal data",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "PostmanRuntime/7.49.1",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "PostmanRuntime/7.49.1",
+    "timestamp": {
+      "$date": "2025-12-03T13:35:13.854Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-03T13:35:13.861Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-03T13:35:13.861Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69303c9cef1e323d79977386"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "Update Personal Data",
+  "description": "jehanapptest@gmail.com updated personal data",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "PostmanRuntime/7.49.1",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "PostmanRuntime/7.49.1",
+    "timestamp": {
+      "$date": "2025-12-03T13:35:24.974Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-03T13:35:24.975Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-03T13:35:24.975Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69303db0ef1e323d7997738d"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "Update Personal Data",
+  "description": "jehanapptest@gmail.com updated personal data",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "PostmanRuntime/7.49.1",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "PostmanRuntime/7.49.1",
+    "timestamp": {
+      "$date": "2025-12-03T13:40:00.869Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-03T13:40:00.869Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-03T13:40:00.869Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69303dffc321f53c21bec545"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "Update Personal Data",
+  "description": "jehanapptest@gmail.com updated personal data",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "PostmanRuntime/7.49.1",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "PostmanRuntime/7.49.1",
+    "timestamp": {
+      "$date": "2025-12-03T13:41:19.390Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-03T13:41:19.397Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-03T13:41:19.397Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69303e5ac321f53c21bec54b"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "Update Personal Data",
+  "description": "jehanapptest@gmail.com updated personal data",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "PostmanRuntime/7.49.1",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "PostmanRuntime/7.49.1",
+    "timestamp": {
+      "$date": "2025-12-03T13:42:50.559Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-03T13:42:50.559Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-03T13:42:50.559Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69303e69a902c1de67090f4f"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "Update Personal Data",
+  "description": "jehanapptest@gmail.com updated personal data",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "PostmanRuntime/7.49.1",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "PostmanRuntime/7.49.1",
+    "timestamp": {
+      "$date": "2025-12-03T13:43:05.529Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-03T13:43:05.531Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-03T13:43:05.531Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69303f2da902c1de67090f55"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "Update Personal Data",
+  "description": "jehanapptest@gmail.com updated personal data",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "PostmanRuntime/7.49.1",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "PostmanRuntime/7.49.1",
+    "timestamp": {
+      "$date": "2025-12-03T13:46:21.357Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-03T13:46:21.358Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-03T13:46:21.358Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69303f4592959a76dcf2fac2"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "Update Personal Data",
+  "description": "jehanapptest@gmail.com updated personal data",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "PostmanRuntime/7.49.1",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "PostmanRuntime/7.49.1",
+    "timestamp": {
+      "$date": "2025-12-03T13:46:45.383Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-03T13:46:45.385Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-03T13:46:45.385Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69303fbd92959a76dcf2fac9"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "Update Personal Data",
+  "description": "jehanapptest@gmail.com updated personal data",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "PostmanRuntime/7.49.1",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "PostmanRuntime/7.49.1",
+    "timestamp": {
+      "$date": "2025-12-03T13:48:45.249Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-03T13:48:45.250Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-03T13:48:45.250Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6930407c92959a76dcf2facf"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "Update Personal Data",
+  "description": "jehanapptest@gmail.com updated personal data",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "PostmanRuntime/7.49.1",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "PostmanRuntime/7.49.1",
+    "timestamp": {
+      "$date": "2025-12-03T13:51:56.789Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-03T13:51:56.789Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-03T13:51:56.789Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69304086f1588986f0534a47"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "Update Personal Data",
+  "description": "jehanapptest@gmail.com updated personal data",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "PostmanRuntime/7.49.1",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "PostmanRuntime/7.49.1",
+    "timestamp": {
+      "$date": "2025-12-03T13:52:06.317Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-03T13:52:06.327Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-03T13:52:06.327Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "693040fdf1588986f0534a4d"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "Update Personal Data",
+  "description": "jehanapptest@gmail.com updated personal data",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "PostmanRuntime/7.49.1",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "PostmanRuntime/7.49.1",
+    "timestamp": {
+      "$date": "2025-12-03T13:54:05.330Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-03T13:54:05.331Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-03T13:54:05.331Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69304108f1588986f0534a53"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "Update Personal Data",
+  "description": "jehanapptest@gmail.com updated personal data",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "PostmanRuntime/7.49.1",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "PostmanRuntime/7.49.1",
+    "timestamp": {
+      "$date": "2025-12-03T13:54:16.828Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-03T13:54:16.829Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-03T13:54:16.829Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6930417af1588986f0534a5d"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "Update Personal Data",
+  "description": "jehanapptest@gmail.com updated personal data",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "PostmanRuntime/7.49.1",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "PostmanRuntime/7.49.1",
+    "timestamp": {
+      "$date": "2025-12-03T13:56:10.309Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-03T13:56:10.309Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-03T13:56:10.309Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6930417df1588986f0534a63"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "Update Social Accounts",
+  "description": "jehanapptest@gmail.com updated social accounts",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "PostmanRuntime/7.49.1",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "PostmanRuntime/7.49.1",
+    "timestamp": {
+      "$date": "2025-12-03T13:56:13.376Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-03T13:56:13.377Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-03T13:56:13.377Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6930493b19d75ad6c5902911"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "Update Education",
+  "description": "jehanapptest@gmail.com Education Updated",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "PostmanRuntime/7.49.1",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "PostmanRuntime/7.49.1",
+    "timestamp": {
+      "$date": "2025-12-03T14:29:15.315Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-03T14:29:15.317Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-03T14:29:15.317Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "693049ba17240fc1380b80d5"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "Update Education",
+  "description": "jehanapptest@gmail.com Education Updated",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "PostmanRuntime/7.49.1",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "PostmanRuntime/7.49.1",
+    "timestamp": {
+      "$date": "2025-12-03T14:31:22.661Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-03T14:31:22.663Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-03T14:31:22.663Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "693049f7d40baebc09b229c0"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "Update Education",
+  "description": "jehanapptest@gmail.com Education Updated",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "PostmanRuntime/7.49.1",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "PostmanRuntime/7.49.1",
+    "timestamp": {
+      "$date": "2025-12-03T14:32:23.069Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-03T14:32:23.071Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-03T14:32:23.071Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69304a15d40baebc09b229ca"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "Update Education",
+  "description": "jehanapptest@gmail.com Education Updated",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "PostmanRuntime/7.49.1",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "PostmanRuntime/7.49.1",
+    "timestamp": {
+      "$date": "2025-12-03T14:32:53.291Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-03T14:32:53.292Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-03T14:32:53.292Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69304a1cfee341a7d033963a"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "Update work experience",
+  "description": "jehanapptest@gmail.com work experience Updated",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "PostmanRuntime/7.49.1",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "PostmanRuntime/7.49.1",
+    "timestamp": {
+      "$date": "2025-12-03T14:33:00.259Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-03T14:33:00.261Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-03T14:33:00.261Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69304d387e5d5168336f55c8"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "Update AI API",
+  "description": "jehanapptest@gmail.com Update AI API",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "PostmanRuntime/7.49.1",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "PostmanRuntime/7.49.1",
+    "timestamp": {
+      "$date": "2025-12-03T14:46:16.026Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-03T14:46:16.033Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-03T14:46:16.033Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6930cd497e5d5168336f55e9"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "Update Personal Data",
+  "description": "jehanapptest@gmail.com updated personal data",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": {
+      "$date": "2025-12-03T23:52:41.423Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-03T23:52:41.439Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-03T23:52:41.439Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6930cdc562cfa4c23195ff6e"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "Update Personal Data",
+  "description": "jehanapptest@gmail.com updated personal data",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": {
+      "$date": "2025-12-03T23:54:45.700Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-03T23:54:45.707Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-03T23:54:45.707Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6930ce0462cfa4c23195ff75"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "Update Personal Data",
+  "description": "jehanapptest@gmail.com updated personal data",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": {
+      "$date": "2025-12-03T23:55:48.735Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-03T23:55:48.738Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-03T23:55:48.738Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6930ce3e62cfa4c23195ff7b"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "Update Personal Data",
+  "description": "jehanapptest@gmail.com updated personal data",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": {
+      "$date": "2025-12-03T23:56:46.560Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-03T23:56:46.561Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-03T23:56:46.561Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6930cf4962cfa4c23195ff81"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "Update Social Accounts",
+  "description": "jehanapptest@gmail.com updated social accounts",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": {
+      "$date": "2025-12-04T00:01:13.274Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-04T00:01:13.275Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-04T00:01:13.275Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6930cf6b62cfa4c23195ff87"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "Update Social Accounts",
+  "description": "jehanapptest@gmail.com updated social accounts",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": {
+      "$date": "2025-12-04T00:01:47.716Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-04T00:01:47.716Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-04T00:01:47.716Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6930cfd662cfa4c23195ff8e"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "Update Education",
+  "description": "jehanapptest@gmail.com Education Updated",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": {
+      "$date": "2025-12-04T00:03:34.622Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-04T00:03:34.623Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-04T00:03:34.623Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6930d03662cfa4c23195ff96"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "Update work experience",
+  "description": "jehanapptest@gmail.com work experience Updated",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": {
+      "$date": "2025-12-04T00:05:10.473Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-04T00:05:10.474Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-04T00:05:10.474Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6930d08862cfa4c23195ff9f"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "Update work experience",
+  "description": "jehanapptest@gmail.com work experience Updated",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": {
+      "$date": "2025-12-04T00:06:32.106Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-04T00:06:32.107Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-04T00:06:32.107Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6930d0e262cfa4c23195ffab"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "Update AI API",
+  "description": "jehanapptest@gmail.com Update AI API",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": {
+      "$date": "2025-12-04T00:08:02.838Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-04T00:08:02.840Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-04T00:08:02.840Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6930d307501fdb185349ad2d"
+  },
+  "user": {
+    "$oid": "692c2d8f991089a6d7e2cf52"
+  },
+  "action": "login_success",
+  "description": "jkandymusic@gmail.com Login Success",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": "12/4/2025, 5:47:11 AM"
+  },
+  "createdAt": {
+    "$date": "2025-12-04T00:17:11.813Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-04T00:17:11.813Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6930d32e501fdb185349ad34"
+  },
+  "user": {
+    "$oid": "692c2d8f991089a6d7e2cf52"
+  },
+  "action": "Update Personal Data",
+  "description": "jkandymusic@gmail.com updated personal data",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": {
+      "$date": "2025-12-04T00:17:50.407Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-04T00:17:50.408Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-04T00:17:50.408Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6930d47f501fdb185349ad6a"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "Update Personal Data",
+  "description": "jehanapptest@gmail.com updated personal data",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": {
+      "$date": "2025-12-04T00:23:27.204Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-04T00:23:27.206Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-04T00:23:27.206Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6930d492501fdb185349ad82"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "Update Personal Data",
+  "description": "jehanapptest@gmail.com updated personal data",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": {
+      "$date": "2025-12-04T00:23:46.549Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-04T00:23:46.550Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-04T00:23:46.550Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6930d54e501fdb185349adac"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "Update Personal Data",
+  "description": "jehanapptest@gmail.com updated personal data",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": {
+      "$date": "2025-12-04T00:26:54.191Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-04T00:26:54.192Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-04T00:26:54.192Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6930d59d501fdb185349adc4"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "Update Personal Data",
+  "description": "jehanapptest@gmail.com updated personal data",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "PostmanRuntime/7.49.1",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "PostmanRuntime/7.49.1",
+    "timestamp": {
+      "$date": "2025-12-04T00:28:13.475Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-04T00:28:13.475Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-04T00:28:13.475Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6930d5cb501fdb185349add0"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "Update Personal Data",
+  "description": "jehanapptest@gmail.com updated personal data",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": {
+      "$date": "2025-12-04T00:28:59.176Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-04T00:28:59.178Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-04T00:28:59.178Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6930d5f4501fdb185349ade8"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "Update Personal Data",
+  "description": "jehanapptest@gmail.com updated personal data",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "PostmanRuntime/7.49.1",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "PostmanRuntime/7.49.1",
+    "timestamp": {
+      "$date": "2025-12-04T00:29:40.149Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-04T00:29:40.150Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-04T00:29:40.150Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6930d600501fdb185349adf4"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "Update Personal Data",
+  "description": "jehanapptest@gmail.com updated personal data",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": {
+      "$date": "2025-12-04T00:29:52.414Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-04T00:29:52.415Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-04T00:29:52.415Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6930d679501fdb185349ae0c"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "Update Personal Data",
+  "description": "jehanapptest@gmail.com updated personal data",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": {
+      "$date": "2025-12-04T00:31:53.467Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-04T00:31:53.467Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-04T00:31:53.467Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6930d6d124870d7271c92b0b"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "Update Personal Data",
+  "description": "jehanapptest@gmail.com updated personal data",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": {
+      "$date": "2025-12-04T00:33:21.838Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-04T00:33:21.846Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-04T00:33:21.846Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6930d70924870d7271c92b24"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "Update Personal Data",
+  "description": "jehanapptest@gmail.com updated personal data",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": {
+      "$date": "2025-12-04T00:34:17.831Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-04T00:34:17.832Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-04T00:34:17.832Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6930d71524870d7271c92b30"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "Update Social Accounts",
+  "description": "jehanapptest@gmail.com updated social accounts",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": {
+      "$date": "2025-12-04T00:34:29.706Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-04T00:34:29.707Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-04T00:34:29.707Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6930d73124870d7271c92b3d"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "Update work experience",
+  "description": "jehanapptest@gmail.com work experience Updated",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": {
+      "$date": "2025-12-04T00:34:57.843Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-04T00:34:57.843Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-04T00:34:57.843Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6930d75924870d7271c92b4d"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "Update work experience",
+  "description": "jehanapptest@gmail.com work experience Updated",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": {
+      "$date": "2025-12-04T00:35:37.644Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-04T00:35:37.645Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-04T00:35:37.645Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6930d76a24870d7271c92b60"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "Update Education",
+  "description": "jehanapptest@gmail.com Education Updated",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": {
+      "$date": "2025-12-04T00:35:54.439Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-04T00:35:54.439Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-04T00:35:54.439Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6930d80324870d7271c92b8a"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "Update Personal Data",
+  "description": "jehanapptest@gmail.com updated personal data",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": {
+      "$date": "2025-12-04T00:38:27.628Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-04T00:38:27.628Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-04T00:38:27.628Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6930d8a424870d7271c92bc6"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "Update AI API",
+  "description": "jehanapptest@gmail.com Update AI API",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": {
+      "$date": "2025-12-04T00:41:08.220Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-04T00:41:08.221Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-04T00:41:08.221Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "693173a1d2535ade7ea72127"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "login_success",
+  "description": "jehanapptest@gmail.com Login Success",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": "12/4/2025, 5:12:25 PM"
+  },
+  "createdAt": {
+    "$date": "2025-12-04T11:42:25.814Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-04T11:42:25.814Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69317653d2535ade7ea72209"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "Update Education",
+  "description": "jehanapptest@gmail.com Education Updated",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": {
+      "$date": "2025-12-04T11:53:55.126Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-04T11:53:55.129Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-04T11:53:55.129Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69322a0f729240b70cb1a895"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "login_success",
+  "description": "jehanapptest@gmail.com Login Success",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": "12/5/2025, 6:10:47 AM"
+  },
+  "createdAt": {
+    "$date": "2025-12-05T00:40:47.678Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T00:40:47.678Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6932426467bea11d7d7716d0"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "Update Social Accounts",
+  "description": "jehanapptest@gmail.com updated social accounts",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "PostmanRuntime/7.49.1",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "PostmanRuntime/7.49.1",
+    "timestamp": {
+      "$date": "2025-12-05T02:24:36.997Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-05T02:24:36.999Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T02:24:36.999Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6932429118a7b51d92140a0c"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "Update Social Accounts",
+  "description": "jehanapptest@gmail.com updated social accounts",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "PostmanRuntime/7.49.1",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "PostmanRuntime/7.49.1",
+    "timestamp": {
+      "$date": "2025-12-05T02:25:21.884Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-05T02:25:21.886Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T02:25:21.886Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "693245946a24afd42b72d748"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "Update Social Accounts",
+  "description": "jehanapptest@gmail.com updated social accounts",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": {
+      "$date": "2025-12-05T02:38:12.740Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-05T02:38:12.742Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T02:38:12.742Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "693245da6a24afd42b72d764"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "Update Social Accounts",
+  "description": "jehanapptest@gmail.com updated social accounts",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": {
+      "$date": "2025-12-05T02:39:22.123Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-05T02:39:22.124Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T02:39:22.124Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "693245ee6a24afd42b72d777"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "Update Social Accounts",
+  "description": "jehanapptest@gmail.com updated social accounts",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": {
+      "$date": "2025-12-05T02:39:42.639Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-05T02:39:42.640Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T02:39:42.640Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "693246336a24afd42b72d79a"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "Update Social Accounts",
+  "description": "jehanapptest@gmail.com updated social accounts",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": {
+      "$date": "2025-12-05T02:40:51.888Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-05T02:40:51.888Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T02:40:51.888Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "693246746a24afd42b72d7a6"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "Update Social Accounts",
+  "description": "jehanapptest@gmail.com updated social accounts",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": {
+      "$date": "2025-12-05T02:41:56.441Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-05T02:41:56.442Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T02:41:56.442Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "693246816a24afd42b72d7b9"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "Update Social Accounts",
+  "description": "jehanapptest@gmail.com updated social accounts",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": {
+      "$date": "2025-12-05T02:42:09.830Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-05T02:42:09.830Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T02:42:09.830Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "693246ce6a24afd42b72d7cc"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "Update Social Accounts",
+  "description": "jehanapptest@gmail.com updated social accounts",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": {
+      "$date": "2025-12-05T02:43:26.224Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-05T02:43:26.224Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T02:43:26.224Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "693246d06a24afd42b72d7d8"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "Update Social Accounts",
+  "description": "jehanapptest@gmail.com updated social accounts",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": {
+      "$date": "2025-12-05T02:43:28.430Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-05T02:43:28.431Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T02:43:28.431Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "693246d46a24afd42b72d7e4"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "Update Social Accounts",
+  "description": "jehanapptest@gmail.com updated social accounts",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": {
+      "$date": "2025-12-05T02:43:32.744Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-05T02:43:32.745Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T02:43:32.745Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "693246e36a24afd42b72d7f7"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "Update Social Accounts",
+  "description": "jehanapptest@gmail.com updated social accounts",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": {
+      "$date": "2025-12-05T02:43:47.089Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-05T02:43:47.090Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T02:43:47.090Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6932474e6a24afd42b72d80a"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "Update Social Accounts",
+  "description": "jehanapptest@gmail.com updated social accounts",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": {
+      "$date": "2025-12-05T02:45:34.297Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-05T02:45:34.297Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T02:45:34.297Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6932478f6a24afd42b72d81d"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "Update Social Accounts",
+  "description": "jehanapptest@gmail.com updated social accounts",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": {
+      "$date": "2025-12-05T02:46:39.118Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-05T02:46:39.119Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T02:46:39.119Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "693247cc6a24afd42b72d83c"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "Update Social Accounts",
+  "description": "jehanapptest@gmail.com updated social accounts",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": {
+      "$date": "2025-12-05T02:47:40.477Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-05T02:47:40.478Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T02:47:40.478Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "693247f26a24afd42b72d85b"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "Update Social Accounts",
+  "description": "jehanapptest@gmail.com updated social accounts",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": {
+      "$date": "2025-12-05T02:48:18.177Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-05T02:48:18.177Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T02:48:18.177Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6932481e6a24afd42b72d876"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "Update Social Accounts",
+  "description": "jehanapptest@gmail.com updated social accounts",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": {
+      "$date": "2025-12-05T02:49:02.718Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-05T02:49:02.719Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T02:49:02.719Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "693248a66a24afd42b72d882"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "Update Social Accounts",
+  "description": "jehanapptest@gmail.com updated social accounts",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": {
+      "$date": "2025-12-05T02:51:18.364Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-05T02:51:18.365Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T02:51:18.365Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "693248bd6a24afd42b72d8a5"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "Update Social Accounts",
+  "description": "jehanapptest@gmail.com updated social accounts",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": {
+      "$date": "2025-12-05T02:51:41.662Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-05T02:51:41.662Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T02:51:41.662Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "693248d16a24afd42b72d8b9"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "Update Social Accounts",
+  "description": "jehanapptest@gmail.com updated social accounts",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": {
+      "$date": "2025-12-05T02:52:01.909Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-05T02:52:01.909Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T02:52:01.909Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "693249016a24afd42b72d8d4"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "Update Social Accounts",
+  "description": "jehanapptest@gmail.com updated social accounts",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": {
+      "$date": "2025-12-05T02:52:49.950Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-05T02:52:49.950Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T02:52:49.950Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "693249066a24afd42b72d8e8"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "Update Social Accounts",
+  "description": "jehanapptest@gmail.com updated social accounts",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": {
+      "$date": "2025-12-05T02:52:54.795Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-05T02:52:54.795Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T02:52:54.795Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69324d64ea8d2f3f88271f0b"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "Repo Saved",
+  "description": "jehanapptest@gmail.com Repo saved Shinigami-Api",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "PostmanRuntime/7.49.1",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "PostmanRuntime/7.49.1",
+    "timestamp": {
+      "$date": "2025-12-05T03:11:32.078Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-05T03:11:32.081Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T03:11:32.081Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69324d71ea8d2f3f88271f17"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "Repo Saved",
+  "description": "jehanapptest@gmail.com Repo saved facebook-simulation",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": {
+      "$date": "2025-12-05T03:11:45.396Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-05T03:11:45.398Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T03:11:45.398Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6932511944453c860b6ea23a"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "wrong_password",
+  "description": "jehanapptest@gmail.com login failed",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": {
+      "$date": "2025-12-05T03:27:21.373Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-05T03:27:21.380Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T03:27:21.380Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6932511f44453c860b6ea23e"
+  },
+  "user": {
+    "$oid": "692c2d8f991089a6d7e2cf52"
+  },
+  "action": "login_success",
+  "description": "jkandymusic@gmail.com Login Success",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": "12/5/2025, 8:57:27 AM"
+  },
+  "createdAt": {
+    "$date": "2025-12-05T03:27:27.904Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T03:27:27.904Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6932525744453c860b6ea2c5"
+  },
+  "user": {
+    "$oid": "692c2d8f991089a6d7e2cf52"
+  },
+  "action": "Repo Saved",
+  "description": "jkandymusic@gmail.com Repo saved MERN-Chat-App",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": {
+      "$date": "2025-12-05T03:32:39.531Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-05T03:32:39.532Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T03:32:39.532Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "693252fc44453c860b6ea36c"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "Repo Saved",
+  "description": "jehanapptest@gmail.com Repo saved career-path-helper",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": {
+      "$date": "2025-12-05T03:35:24.835Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-05T03:35:24.837Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T03:35:24.837Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6932620644453c860b6ea43a"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "Update AI API",
+  "description": "jehanapptest@gmail.com Update AI API",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": {
+      "$date": "2025-12-05T04:39:34.951Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-05T04:39:34.952Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T04:39:34.952Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69326eaf2ce239430630b8dc"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "Project Connected",
+  "description": "jehanapptest@gmail.com Successfully Connect Project career-path-helper",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "PostmanRuntime/7.49.1",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "PostmanRuntime/7.49.1",
+    "timestamp": {
+      "$date": "2025-12-05T05:33:35.928Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-05T05:33:35.929Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T05:33:35.929Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69326f9e2ce239430630b9ba"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "Project Connected",
+  "description": "jehanapptest@gmail.com Successfully Connect Project health-care",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": {
+      "$date": "2025-12-05T05:37:34.252Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-05T05:37:34.253Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T05:37:34.253Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69326fb32ce239430630ba06"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "Project Connected",
+  "description": "jehanapptest@gmail.com Successfully Connect Project ai-chatbot",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": {
+      "$date": "2025-12-05T05:37:55.023Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-05T05:37:55.023Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T05:37:55.023Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69326fcf2ce239430630ba4a"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "Project Connected",
+  "description": "jehanapptest@gmail.com Successfully Connect Project career-path-helper",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": {
+      "$date": "2025-12-05T05:38:23.846Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-05T05:38:23.848Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T05:38:23.848Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69326fe42ce239430630ba5e"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "Project Connected",
+  "description": "jehanapptest@gmail.com Successfully Connect Project career-path-helper",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "PostmanRuntime/7.49.1",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "PostmanRuntime/7.49.1",
+    "timestamp": {
+      "$date": "2025-12-05T05:38:44.505Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-05T05:38:44.505Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T05:38:44.505Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69326ff42ce239430630ba6a"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "Project Connected",
+  "description": "jehanapptest@gmail.com Successfully Connect Project career-path-helper",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": {
+      "$date": "2025-12-05T05:39:00.546Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-05T05:39:00.546Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T05:39:00.546Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "693270572ce239430630baae"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "Project Connected",
+  "description": "jehanapptest@gmail.com Successfully Connect Project career-path-helper",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": {
+      "$date": "2025-12-05T05:40:39.718Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-05T05:40:39.719Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T05:40:39.719Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "693270a42ce239430630baba"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "Project Connected",
+  "description": "jehanapptest@gmail.com Successfully Connect Project health-care",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": {
+      "$date": "2025-12-05T05:41:56.902Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-05T05:41:56.903Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T05:41:56.903Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6932d418639aa50caafadec5"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "login_success",
+  "description": "jehanapptest@gmail.com Login Success",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": "12/5/2025, 6:16:16 PM"
+  },
+  "createdAt": {
+    "$date": "2025-12-05T12:46:16.872Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-05T12:46:16.872Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69362783cb0e288bab231928"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "login_success",
+  "description": "jehanapptest@gmail.com Login Success",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": "12/8/2025, 6:48:59 AM"
+  },
+  "createdAt": {
+    "$date": "2025-12-08T01:18:59.636Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-08T01:18:59.636Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69363be220cbf209ad9cf8eb"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "login_success",
+  "description": "jehanapptest@gmail.com Login Success",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": "12/8/2025, 8:15:54 AM"
+  },
+  "createdAt": {
+    "$date": "2025-12-08T02:45:54.128Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-08T02:45:54.128Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69363ca71407e86e594d380a"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "Skill_added",
+  "description": "jehanapptest@gmail.com Successfully added Skill",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "PostmanRuntime/7.49.1",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "PostmanRuntime/7.49.1",
+    "timestamp": {
+      "$date": "2025-12-08T02:49:11.673Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-08T02:49:11.678Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-08T02:49:11.678Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69363cb61407e86e594d3811"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "Skill_added",
+  "description": "jehanapptest@gmail.com Successfully added Skill",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": {
+      "$date": "2025-12-08T02:49:26.553Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-08T02:49:26.556Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-08T02:49:26.556Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69363cc61407e86e594d3834"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "Skill_added",
+  "description": "jehanapptest@gmail.com Successfully added Skill",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": {
+      "$date": "2025-12-08T02:49:42.812Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-08T02:49:42.814Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-08T02:49:42.814Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69363dc71407e86e594d38c6"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "Skill_added",
+  "description": "jehanapptest@gmail.com Successfully added Skill",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": {
+      "$date": "2025-12-08T02:53:59.263Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-08T02:53:59.264Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-08T02:53:59.264Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69364344c8087755ac3412fb"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "Delete_skill",
+  "description": "jehanapptest@gmail.com Successfully Deleted Skill",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "PostmanRuntime/7.49.1",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "PostmanRuntime/7.49.1",
+    "timestamp": {
+      "$date": "2025-12-08T03:17:24.111Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-08T03:17:24.118Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-08T03:17:24.118Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6936437fc8087755ac341344"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "Delete_skill",
+  "description": "jehanapptest@gmail.com Successfully Deleted Skill",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": {
+      "$date": "2025-12-08T03:18:23.379Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-08T03:18:23.380Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-08T03:18:23.380Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6936444bc8087755ac3413d8"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "Skill_added",
+  "description": "jehanapptest@gmail.com Successfully added Skill",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": {
+      "$date": "2025-12-08T03:21:47.191Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-08T03:21:47.193Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-08T03:21:47.193Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6936444fc8087755ac341400"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "Delete_skill",
+  "description": "jehanapptest@gmail.com Successfully Deleted Skill",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": {
+      "$date": "2025-12-08T03:21:51.155Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-08T03:21:51.156Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-08T03:21:51.156Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69364512c8087755ac341442"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "Skill_added",
+  "description": "jehanapptest@gmail.com Successfully added Skill",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": {
+      "$date": "2025-12-08T03:25:06.680Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-08T03:25:06.681Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-08T03:25:06.681Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6936451cc8087755ac34146b"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "Skill_added",
+  "description": "jehanapptest@gmail.com Successfully added Skill",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": {
+      "$date": "2025-12-08T03:25:16.327Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-08T03:25:16.328Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-08T03:25:16.328Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6936452ac8087755ac341494"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "Skill_added",
+  "description": "jehanapptest@gmail.com Successfully added Skill",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": {
+      "$date": "2025-12-08T03:25:30.499Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-08T03:25:30.500Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-08T03:25:30.500Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69364535c8087755ac3414bd"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "Skill_added",
+  "description": "jehanapptest@gmail.com Successfully added Skill",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": {
+      "$date": "2025-12-08T03:25:41.182Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-08T03:25:41.183Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-08T03:25:41.183Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69364541c8087755ac3414e6"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "Skill_added",
+  "description": "jehanapptest@gmail.com Successfully added Skill",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": {
+      "$date": "2025-12-08T03:25:53.346Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-08T03:25:53.347Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-08T03:25:53.347Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6936454cc8087755ac34150f"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "Skill_added",
+  "description": "jehanapptest@gmail.com Successfully added Skill",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": {
+      "$date": "2025-12-08T03:26:04.626Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-08T03:26:04.626Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-08T03:26:04.626Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6936455bc8087755ac341538"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "Skill_added",
+  "description": "jehanapptest@gmail.com Successfully added Skill",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": {
+      "$date": "2025-12-08T03:26:19.787Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-08T03:26:19.788Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-08T03:26:19.788Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69364568c8087755ac341561"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "Skill_added",
+  "description": "jehanapptest@gmail.com Successfully added Skill",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": {
+      "$date": "2025-12-08T03:26:32.738Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-08T03:26:32.739Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-08T03:26:32.739Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "693652024dd9a53665e0a50c"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "genarete_skill_plan",
+  "description": "jehanapptest@gmail.com Successfully Genarated Skill Plan",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "PostmanRuntime/7.49.1",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "PostmanRuntime/7.49.1",
+    "timestamp": {
+      "$date": "2025-12-08T04:20:18.238Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-08T04:20:18.239Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-08T04:20:18.239Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "693652ba0b3977287d4a34e0"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "genarete_skill_plan",
+  "description": "jehanapptest@gmail.com Successfully Genarated Skill Plan",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": {
+      "$date": "2025-12-08T04:23:22.584Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-08T04:23:22.586Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-08T04:23:22.586Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6936542606428464b9522516"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "genarete_skill_plan",
+  "description": "jehanapptest@gmail.com Successfully Genarated Skill Plan",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": {
+      "$date": "2025-12-08T04:29:26.030Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-08T04:29:26.032Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-08T04:29:26.032Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69379921fc12a5736c47115c"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "login_success",
+  "description": "jehanapptest@gmail.com Login Success",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": "12/9/2025, 9:06:00 AM"
+  },
+  "createdAt": {
+    "$date": "2025-12-09T03:36:01.091Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-09T03:36:01.091Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6937a59e9b851f8c06ddf31e"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "login_success",
+  "description": "jehanapptest@gmail.com Login Success",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": "12/9/2025, 9:59:18 AM"
+  },
+  "createdAt": {
+    "$date": "2025-12-09T04:29:18.584Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-09T04:29:18.584Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6937b0240fb4b35990a53a8d"
+  },
+  "user": {
+    "$oid": "692bd6089bba2ad29521d330"
+  },
+  "action": "genarete_skill_plan",
+  "description": "jehanapptest@gmail.com Successfully Genarated Skill Plan",
+  "ipAddress": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "metadata": {
+    "ipAddress": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+    "timestamp": {
+      "$date": "2025-12-09T05:14:12.606Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-12-09T05:14:12.607Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-09T05:14:12.607Z"
+  },
+  "__v": 0
+}]
