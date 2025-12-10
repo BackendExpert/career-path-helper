@@ -91,7 +91,20 @@ class ArticleService {
 
         const getallsavedarticles = await SavedArticle.find({ user: user._id })
 
-        return GetSavedArticlesResDTO(getallsavedarticles)
+        const allResults = await Promise.all(
+            getallsavedarticles.map(async (saved) => {
+                const res = await axios.get('https://dev.to/api/articles/search', {
+                    params: {
+                        q: `"${saved.article}"`, 
+                        per_page: 1
+                    }
+                });
+                return res.data; 
+            })
+        );
+
+        const flatResults = allResults.flat();
+        return GetSavedArticlesResDTO(flatResults)
     }
 }
 

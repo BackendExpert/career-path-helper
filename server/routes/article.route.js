@@ -8,4 +8,6 @@ router.get('/get-articles', auth, ArticleController.gettoparticals)
 
 router.post('/save-article', auth, ArticleController.saveArticle)
 
+router.get('/saved-articles', auth, ArticleController.getSavedArticles)
+
 module.exports = router;
