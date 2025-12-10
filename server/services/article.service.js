@@ -8,7 +8,10 @@ const jwt = require("jsonwebtoken")
 const logUserAction = require("../utils/others/logUserAction");
 
 const article = require("../utils/apis/devto");
-const { GetTopArticlesResDTO } = require("../dtos/article.dto");
+const {
+    GetTopArticlesResDTO,
+    SaveArticleResDTO
+} = require("../dtos/article.dto");
 
 class ArticleService {
     static async GetTopArticals() {
@@ -33,6 +36,43 @@ class ArticleService {
         const latestArticles = allArticles.slice(0, maxArticles);
 
         return GetTopArticlesResDTO(latestArticles);
+    }
+
+    static async SavedArticle(token, article, req) {
+        let decoded;
+
+        try {
+            decoded = jwt.verify(token, process.env.JWT_SECRET);
+        } catch (err) {
+            if (err.name === "TokenExpiredError") throw new Error("Token expired");
+            throw new Error("Invalid token");
+        }
+
+        const user = await User.findOne({ email: decoded.email });
+        if (!user) throw new Error("User not found");
+
+        const checkarticle = await SavedArticle.findOne({ article: article })
+        if (checkarticle) throw new Error("This Articles Already Saved");
+
+        const savearticle = new SavedArticle({
+            user: user._id,
+            article: article,
+        })
+
+        const savearticleresult = await savearticle.save()
+
+        if (savearticleresult) {
+            if (req) {
+                const metadata = {
+                    ipAddress: req.headers["x-forwarded-for"] || req.socket.remoteAddress,
+                    userAgent: req.headers["user-agent"],
+                    timestamp: new Date(),
+                };
+                await logUserAction(req, "Article_saved", `${decoded.email} Successfully Save Article ${article}`, metadata, user._id);
+            }
+
+            return SaveArticleResDTO()
+        }
     }
 }
 

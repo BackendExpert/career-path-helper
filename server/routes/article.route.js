@@ -6,4 +6,6 @@ const router = express.Router();
 
 router.get('/get-articles', auth, ArticleController.gettoparticals)
 
+router.post('/save-article', auth, ArticleController.saveArticle)
+
 module.exports = router;
