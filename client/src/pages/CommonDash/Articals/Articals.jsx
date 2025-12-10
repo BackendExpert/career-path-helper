@@ -3,8 +3,11 @@ import API from '../../../services/api';
 import { BsFillGridFill } from "react-icons/bs";
 import { FaCheck, FaList, FaInfoCircle } from "react-icons/fa";
 import DefaultInput from '../../../component/Form/DefaultInput';
+import DefaultButton from '../../../component/Buttons/DefaultButton';
+import Toast from '../../../component/Toast/Toast';
 
 const Articles = () => {
+    const [toast, setToast] = useState(null);
     const token = localStorage.getItem('token');
     const [topArticles, setTopArticles] = useState([]);
     const [filteredArticles, setFilteredArticles] = useState([]);
@@ -53,8 +56,40 @@ const Articles = () => {
         if (direction === 'next' && currentPage < totalPages) setCurrentPage(currentPage + 1);
     };
 
+    const SaveArticle = async (title) => {
+        try {
+            const res = await API.post(
+                "/article/save-article",
+                { article: title },
+                { headers: { Authorization: `Bearer ${token}` } }
+            );
+            if (res.data.success === true) {
+                setToast({ success: true, message: res.data.message });
+                setTimeout(() => window.location.reload(), 2000);
+            }
+            else {
+                setToast({ success: false, message: res.data.message });
+            }
+
+        } catch (err) {
+            setToast({
+                success: false,
+                message: err.response?.data?.message || "Something went wrong"
+            });
+        }
+    };
+
     return (
         <div className='mr-4'>
+            {toast && (
+                <div className="absolute top-5 right-5 z-50">
+                    <Toast
+                        success={toast.success}
+                        message={toast.message}
+                        onClose={() => setToast(null)}
+                    />
+                </div>
+            )}
             <div className="bg-gradient-to-r from-emerald-400 to-cyan-400 p-5 rounded-2xl shadow-lg text-white mb-6 text-center">
                 <h1 className="text-2xl md:text-3xl font-bold tracking-wider drop-shadow-sm">
                     Top Latest Articles
@@ -178,6 +213,13 @@ const Articles = () => {
                                     </span>
                                 </div>
                             </div>
+                            <div className="p-4">
+                                <DefaultButton
+                                    type='button'
+                                    label='Save Article'
+                                    onClick={() => SaveArticle(data.title)}
+                                />
+                            </div>
                         </div>
                     ))}
                 </div>
@@ -212,6 +254,13 @@ const Articles = () => {
                                         {new Date(data.published_timestamp).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
                                     </span>
                                 </div>
+                            </div>
+                            <div className="p-4">
+                                <DefaultButton
+                                    type='button'
+                                    label='Save Article'
+                                    onClick={() => SaveArticle(data.title)}
+                                />
                             </div>
                         </div>
                     ))}

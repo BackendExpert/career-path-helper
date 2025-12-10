@@ -24,6 +24,7 @@ import Skills from '../pages/CommonDash/Skills/Skills'
 import SkillGrowthPlan from '../pages/CommonDash/Skills/SkillGrowthPlan'
 import SkillPlan from '../pages/CommonDash/Skills/SkillPlan'
 import Articals from '../pages/CommonDash/Articals/Articals'
+import SavedArticle from '../pages/CommonDash/Articals/SavedArticle'
 
 function App() {
     return (
@@ -55,6 +56,7 @@ function App() {
                         
 
                         <Route path='articles' element={<PrivateRoute roles={['admin', 'intern', 'undergraduate', 'ase', 'se']}><Articals /> </PrivateRoute>} />
+                        <Route path='articles/saved' element={<PrivateRoute roles={['admin', 'intern', 'undergraduate', 'ase', 'se']}><SavedArticle /> </PrivateRoute>} />
 
 
                         {/* admin */}
