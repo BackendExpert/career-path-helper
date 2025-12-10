@@ -10,7 +10,8 @@ const logUserAction = require("../utils/others/logUserAction");
 const article = require("../utils/apis/devto");
 const {
     GetTopArticlesResDTO,
-    SaveArticleResDTO
+    SaveArticleResDTO,
+    GetSavedArticlesResDTO
 } = require("../dtos/article.dto");
 
 class ArticleService {
@@ -73,6 +74,24 @@ class ArticleService {
 
             return SaveArticleResDTO()
         }
+    }
+
+    static async GetSavedArticles(token) {
+        let decoded;
+
+        try {
+            decoded = jwt.verify(token, process.env.JWT_SECRET);
+        } catch (err) {
+            if (err.name === "TokenExpiredError") throw new Error("Token expired");
+            throw new Error("Invalid token");
+        }
+
+        const user = await User.findOne({ email: decoded.email });
+        if (!user) throw new Error("User not found");
+
+        const getallsavedarticles = await SavedArticle.find({ user: user._id })
+
+        return GetSavedArticlesResDTO(getallsavedarticles)
     }
 }
 
