@@ -3,6 +3,8 @@ exports.ConnectProjectResDTO = (message = "Project Connected Successully") => ({
 
 exports.GetConnectedProjectsResDTO = (result, message = "All Connected Projects Fetched Successfully") => ({ success: true, result, message })
 
+exports.CreateAIPorjectResDTO = (message="AI Project Created Success") => ({ success: true, message})
+
 exports.ErrorResDTO = (message = "Something went wrong") => ({
     success: false,
     message
