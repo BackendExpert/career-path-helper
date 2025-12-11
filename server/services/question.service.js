@@ -6,11 +6,38 @@ const AIProject = require("../models/aiproject.model")
 
 const logUserAction = require("../utils/others/logUserAction");
 
+const {
+    GetAllQuestionsFromAPIResDTO
+} = require("../dtos/question.dto")
+
 const jwt = require("jsonwebtoken")
+const stack = require("../utils/apis/stackapi")
 
 class QuestionService {
-    static async getquestions () {
-        
+    static async getquestions(filters = {}) {
+        const {
+            intitle,
+            tagged,
+            sort = "activity",
+            min,
+            answers,
+            fromdate,
+            todate,
+            page = 1
+        } = filters;
+
+        const params = { site: "stackoverflow", page, pagesize: 20, sort };
+
+        if (intitle) params.intitle = intitle;
+        if (tagged) params.tagged = tagged.replace(/\s+/g, ";");
+        if (min) params.min = min;
+        if (answers) params.answers = answers;
+        if (fromdate) params.fromdate = fromdate;
+        if (todate) params.todate = todate;
+
+        const response = await stack.get("/search", { params });
+
+        return GetAllQuestionsFromAPIResDTO(response.data.items);
     }
 }
 
