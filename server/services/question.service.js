@@ -28,12 +28,18 @@ class QuestionService {
 
         const params = { site: "stackoverflow", page, pagesize: 20, sort };
 
-        if (intitle) params.intitle = intitle;
-        if (tagged) params.tagged = tagged.replace(/\s+/g, ";");
-        if (min) params.min = min;
-        if (answers) params.answers = answers;
-        if (fromdate) params.fromdate = fromdate;
-        if (todate) params.todate = todate;
+        const clean = (v) => (typeof v === "string" && v.trim() !== "" ? v.trim() : null);
+
+        if (clean(intitle)) params.intitle = clean(intitle);
+
+        if (clean(tagged)) {
+            params.tagged = clean(tagged).replace(/\s+/g, ";");
+        }
+
+        if (clean(min)) params.min = clean(min);
+        if (clean(answers)) params.answers = clean(answers);
+        if (clean(fromdate)) params.fromdate = clean(fromdate);
+        if (clean(todate)) params.todate = clean(todate);
 
         const response = await stack.get("/search", { params });
 
